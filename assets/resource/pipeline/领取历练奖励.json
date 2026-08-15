@@ -1,0 +1,140 @@
+{
+    "$__mpe_config_领取历练奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1843,
+                "y": -10,
+                "zoom": 0.66
+            },
+            "filename": "领取历练奖励",
+            "version": "v1.7.6"
+        }
+    },
+    "领取历练奖励开始": {
+        "next": [
+            "历练界面是否有待领取奖励",
+            "领取历练奖励结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2710,
+                "y": 460
+            }
+        }
+    },
+    "历练界面是否有待领取奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    11,
+                    129,
+                    80,
+                    78
+                ],
+                "template": [
+                    "有可领取奖励图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -19,
+                    18,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "每日任务是否有待领取奖励",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3030,
+                "y": 264
+            }
+        }
+    },
+    "每日任务是否有待领取奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1085,
+                    182,
+                    121,
+                    97
+                ],
+                "template": [
+                    "有可领取奖励图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    39,
+                    19,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "有没有一键领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3421,
+                "y": 154
+            }
+        }
+    },
+    "领取历练奖励结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3102,
+                "y": 646
+            }
+        }
+    },
+    "有没有一键领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "一键领取图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3934,
+                "y": 96
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_领取历练奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4280,
+                "y": 713
+            }
+        }
+    }
+}

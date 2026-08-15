@@ -1,0 +1,195 @@
+{
+    "$__mpe_config_关卡扫荡": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786789070712,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\关卡扫荡.json",
+            "savedViewport": {
+                "x": -7148,
+                "y": 730,
+                "zoom": 0.57
+            },
+            "filename": "关卡扫荡",
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_返回主界面开始_关卡扫荡": {
+        "$__mpe_code": {
+            "position": {
+                "x": 14399,
+                "y": -1028
+            }
+        }
+    },
+    "关卡扫荡开始": {
+        "next": [
+            "增加关卡扫荡次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12302,
+                "y": -716
+            }
+        }
+    },
+    "减少一次关卡扫荡次数": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    424,
+                    538,
+                    60,
+                    45
+                ],
+                "template": [
+                    "扫荡次数奖励图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "确认关卡扫荡开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13810,
+                "y": -1226
+            }
+        }
+    },
+    "判断扫荡所需体力是否为红色": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    883,
+                    597,
+                    90,
+                    32
+                ],
+                "lower": [
+                    [
+                        255,
+                        0,
+                        0
+                    ]
+                ],
+                "upper": [
+                    [
+                        255,
+                        59,
+                        59
+                    ]
+                ]
+            }
+        },
+        "next": [
+            "减少一次关卡扫荡次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13507,
+                "y": -1113
+            }
+        }
+    },
+    "增加关卡扫荡次数": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    918,
+                    532,
+                    52,
+                    50
+                ],
+                "template": [
+                    "扫荡次数增加图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始判断扫荡所需体力是否为红色"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12731,
+                "y": -1065
+            }
+        }
+    },
+    "开始判断扫荡所需体力是否为红色": {
+        "next": [
+            "判断扫荡所需体力是否为红色",
+            "当前扫荡次数是否为上限",
+            "关卡扫荡开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13167,
+                "y": -972
+            }
+        }
+    },
+    "确认关卡扫荡开始": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    678,
+                    585,
+                    136,
+                    57
+                ],
+                "expected": [
+                    "扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 14139,
+                "y": -1028
+            }
+        }
+    },
+    "当前扫荡次数是否为上限": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    360,
+                    543,
+                    63,
+                    39
+                ],
+                "expected": [
+                    "10"
+                ]
+            }
+        },
+        "next": [
+            "确认关卡扫荡开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13494,
+                "y": -825
+            }
+        }
+    }
+}

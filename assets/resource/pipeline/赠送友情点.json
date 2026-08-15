@@ -1,0 +1,132 @@
+{
+    "$__mpe_config_赠送友情点": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1923,
+                "y": -105,
+                "zoom": 0.66
+            },
+            "filename": "赠送友情点",
+            "version": "v1.7.6"
+        }
+    },
+    "赠送友情点开始": {
+        "next": [
+            "进入好友界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2990,
+                "y": 457
+            }
+        }
+    },
+    "进入好友界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    12,
+                    130,
+                    74,
+                    426
+                ],
+                "template": [
+                    "好友图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择所有好友类别-好友"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3347,
+                "y": 328
+            }
+        }
+    },
+    "选择所有好友类别-好友": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    13,
+                    203,
+                    104,
+                    73
+                ],
+                "expected": [
+                    "好友"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择友情点全部赠送-好友"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3656,
+                "y": 457
+            }
+        }
+    },
+    "选择友情点全部赠送-好友": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    219,
+                    617,
+                    129,
+                    50
+                ],
+                "expected": [
+                    "全部赠送"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4026,
+                "y": 415
+            }
+        }
+    },
+    "选择友情点全部领取-好友": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    462,
+                    612,
+                    126,
+                    58
+                ],
+                "expected": [
+                    "全部领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4569,
+                "y": 399
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+{
+    "$__mpe_config_通关文牒奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -2785,
+                "y": -64,
+                "zoom": 0.57
+            },
+            "filename": "通关文牒奖励",
+            "version": "v1.7.6"
+        }
+    },
+    "通关文牒奖励开始": {
+        "next": [
+            "查看文牒位置"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4940,
+                "y": 530
+            }
+        }
+    },
+    "查看文牒位置": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    150,
+                    107,
+                    91,
+                    28
+                ],
+                "expected": [
+                    "通关文牒"
+                ]
+            }
+        },
+        "next": [
+            "进入文牒界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5241,
+                "y": 471
+            }
+        }
+    },
+    "进入文牒界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    163,
+                    59,
+                    76,
+                    31
+                ],
+                "template": [
+                    "有可领取奖励图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -31,
+                    11,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "是否有待领取任务-文牒"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5576,
+                "y": 507
+            }
+        }
+    },
+    "是否有待领取任务-文牒": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1164,
+                    161,
+                    95,
+                    55
+                ],
+                "template": [
+                    "有可领取奖励图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -30,
+                    14,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "选择一键领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5991,
+                "y": 330
+            }
+        }
+    },
+    "选择一键领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    987,
+                    577,
+                    134,
+                    116
+                ],
+                "template": [
+                    "一键领取图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6428,
+                "y": 307
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_通关文牒奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6931,
+                "y": 362
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+{
+    "$__mpe_config_关卡内作战开始-组件": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786789208528,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\关卡内作战开始-组件.json",
+            "savedViewport": {
+                "x": -8073,
+                "y": 358,
+                "zoom": 0.65
+            },
+            "filename": "关卡内作战开始-组件",
+            "version": "v1.7.6"
+        }
+    },
+    "关卡内作战开始": {
+        "next": [
+            "开始作战",
+            "未在关卡内-任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12603,
+                "y": -235
+            }
+        }
+    },
+    "开启自动战斗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1196,
+                    235,
+                    58,
+                    70
+                ],
+                "expected": [
+                    "自动\n关"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "等待战斗结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13306,
+                "y": -422
+            }
+        }
+    },
+    "开始作战": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1119,
+                    525,
+                    142,
+                    184
+                ],
+                "template": [
+                    "出战图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "开启自动战斗",
+            "等待战斗结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12943,
+                "y": -333
+            }
+        }
+    },
+    "未在关卡内-任务结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12972,
+                "y": 113
+            }
+        }
+    },
+    "确认战斗奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    512,
+                    642,
+                    239,
+                    57
+                ],
+                "expected": [
+                    "点击屏幕继续"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 14330,
+                "y": -419
+            }
+        }
+    },
+    "确认战斗结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    517,
+                    116,
+                    202,
+                    70
+                ],
+                "expected": [
+                    "战斗结算"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2500,
+        "next": [
+            "确认战斗奖励",
+            "未在关卡内-任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13994,
+                "y": -294
+            }
+        }
+    },
+    "等待战斗结束": {
+        "timeout": -1,
+        "next": [
+            "确认战斗结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13666,
+                "y": -267
+            }
+        }
+    }
+}
