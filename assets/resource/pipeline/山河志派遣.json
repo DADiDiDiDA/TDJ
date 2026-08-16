@@ -1,0 +1,339 @@
+{
+    "$__mpe_config_山河志派遣": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786844308368,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\山河志派遣.json",
+            "savedViewport": {
+                "x": -3022,
+                "y": -114,
+                "zoom": 0.65
+            },
+            "filename": "山河志派遣",
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_返回主界面开始_山河志派遣": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8143,
+                "y": 574
+            }
+        }
+    },
+    "任务失败返回主界面-山河志": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7758,
+                "y": 539
+            }
+        }
+    },
+    "判断是否满足派遣任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1042,
+                    591,
+                    204,
+                    116
+                ],
+                "template": [
+                    "未激活派遣图标.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "第一行都上阵了吗",
+            "寻找已上阵角色",
+            "选择第一位角色"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6812,
+                "y": 452
+            }
+        }
+    },
+    "寻找已上阵角色": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    26,
+                    151,
+                    387,
+                    59
+                ],
+                "template": [
+                    "已上阵图标.png"
+                ],
+                "green_mask": true,
+                "order_by": "Horizontal",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    133,
+                    -2,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "开始检查是否满足派遣要求"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7294,
+                "y": 361
+            }
+        }
+    },
+    "山河志派遣开始": {
+        "next": [
+            "进入山河志界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4950,
+                "y": 414
+            }
+        }
+    },
+    "开始领取山河志奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    65,
+                    679,
+                    93,
+                    30
+                ],
+                "expected": [
+                    "可领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5605,
+                "y": 185
+            }
+        }
+    },
+    "接受委托开始": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    936,
+                    648,
+                    134,
+                    55
+                ],
+                "expected": [
+                    "接受委托"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2500,
+        "next": [
+            "开始检查是否满足派遣要求"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6081,
+                "y": 438
+            }
+        }
+    },
+    "满足派遣条件开始执行": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1042,
+                    596,
+                    202,
+                    108
+                ],
+                "template": [
+                    "已激活派遣图标.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择任务地区"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6744,
+                "y": 115
+            }
+        }
+    },
+    "第一行都上阵了吗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    438,
+                    158,
+                    99,
+                    43
+                ],
+                "expected": [
+                    "已上阵"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    133,
+                    -2,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "任务失败返回主界面-山河志"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7213,
+                "y": 45
+            }
+        }
+    },
+    "进入山河志界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    319,
+                    648,
+                    772,
+                    65
+                ],
+                "expected": [
+                    "山河志"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -23,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2500,
+        "next": [
+            "[JumpBack]开始领取山河志奖励",
+            "选择任务地区"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5297,
+                "y": 353
+            }
+        }
+    },
+    "选择任务地区": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    115,
+                    352,
+                    903,
+                    76
+                ],
+                "expected": [
+                    "中立",
+                    "冷淡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "接受委托开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5674,
+                "y": 421
+            }
+        }
+    },
+    "选择第一位角色": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    77,
+                    127,
+                    29,
+                    24
+                ]
+            }
+        },
+        "next": [
+            "开始检查是否满足派遣要求"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7352,
+                "y": 770
+            }
+        }
+    },
+    "开始检查是否满足派遣要求": {
+        "next": [
+            "判断是否满足派遣任务",
+            "满足派遣条件开始执行"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6416,
+                "y": 482
+            }
+        }
+    }
+}

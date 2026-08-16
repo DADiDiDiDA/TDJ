@@ -3,39 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786838618116,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -5167,
-                "y": 366,
-                "zoom": 0.49
+                "x": -5304,
+                "y": 348,
+                "zoom": 0.57
             },
             "filename": "刷体力",
             "version": "v1.7.6"
-        }
-    },
-    "判断是否在关卡内": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    561,
-                    1,
-                    140,
-                    63
-                ],
-                "expected": [
-                    "胜利条件"
-                ]
-            }
-        },
-        "next": [
-            "选择可扫荡的关卡-灵脉光渊",
-            "[JumpBack]关卡内作战开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11414,
-                "y": -419
-            }
         }
     },
     "$__mpe_external_关卡内作战开始_刷体力": {
@@ -43,56 +20,6 @@
             "position": {
                 "x": 11800,
                 "y": -378
-            }
-        }
-    },
-    "体力不足任务结束": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    549,
-                    100,
-                    176,
-                    63
-                ],
-                "expected": [
-                    "取用体力"
-                ]
-            }
-        },
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11315,
-                "y": -1018
-            }
-        }
-    },
-    "开始选择扫荡次数": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    530,
-                    72,
-                    207,
-                    68
-                ],
-                "expected": [
-                    "扫荡结算"
-                ]
-            }
-        },
-        "next": [
-            "关卡扫荡开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11348,
-                "y": -697
             }
         }
     },
@@ -104,170 +31,11 @@
             }
         }
     },
-    "刷体力开始": {
-        "next": [
-            "进入异闻界面",
-            "[JumpBack]进入启程界面"
-        ],
+    "$__mpe_external_返回主界面开始_刷体力": {
         "$__mpe_code": {
             "position": {
-                "x": 7005,
-                "y": 667
-            }
-        }
-    },
-    "进入异闻界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1174,
-                    253,
-                    81,
-                    31
-                ],
-                "expected": [
-                    "异闻"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    -33,
-                    0,
-                    0
-                ]
-            }
-        },
-        "next": [
-            "进入试炼挑战界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 7441,
-                "y": 453
-            }
-        }
-    },
-    "进入试炼挑战界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1080,
-                    190,
-                    163,
-                    57
-                ],
-                "expected": [
-                    "试炼挑战"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "选择打什么关卡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 7851,
-                "y": 432
-            }
-        }
-    },
-    "进入启程界面": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "主界面特征.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2500,
-        "$__mpe_code": {
-            "position": {
-                "x": 7468,
-                "y": 832
-            }
-        }
-    },
-    "选择打什么关卡": {
-        "next": [
-            "灵脉光渊",
-            "创命之间",
-            "三途川",
-            "剑论九州",
-            "海捕今",
-            "幻海魂渊",
-            "魂海渊祭",
-            "[JumpBack]滑动屏幕进行关卡选择"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8161,
-                "y": 396
-            }
-        }
-    },
-    "灵脉光渊": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    167,
-                    168,
-                    906,
-                    304
-                ],
-                "expected": [
-                    "灵脉光渊"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "开始灵脉光渊类型选择"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8540,
-                "y": 45
-            }
-        }
-    },
-    "创命之间": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    167,
-                    168,
-                    906,
-                    304
-                ],
-                "expected": [
-                    "创命"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 8617,
-                "y": 346
+                "x": 11919,
+                "y": 431
             }
         }
     },
@@ -296,6 +64,164 @@
             }
         }
     },
+    "体力不足任务结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    549,
+                    100,
+                    176,
+                    63
+                ],
+                "expected": [
+                    "取用体力"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11315,
+                "y": -1018
+            }
+        }
+    },
+    "光之灵脉": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    75,
+                    154,
+                    633
+                ],
+                "expected": [
+                    "光"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9353,
+                "y": -671
+            }
+        }
+    },
+    "冰之灵脉": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    75,
+                    154,
+                    633
+                ],
+                "expected": [
+                    "冰"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9325,
+                "y": -1030
+            }
+        }
+    },
+    "创命之间": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    167,
+                    168,
+                    906,
+                    304
+                ],
+                "expected": [
+                    "创命"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始创命之间类型选择"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8617,
+                "y": 346
+            }
+        }
+    },
+    "判断是否在关卡内": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    561,
+                    1,
+                    140,
+                    63
+                ],
+                "expected": [
+                    "胜利条件"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]关卡内作战开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11421,
+                "y": -380
+            }
+        }
+    },
+    "刷体力开始": {
+        "next": [
+            "进入异闻界面",
+            "[JumpBack]进入启程界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7005,
+                "y": 667
+            }
+        }
+    },
+    "刷取关卡方式选择-灵脉光渊": {
+        "next": [
+            "选择扫荡方式-灵脉光渊",
+            "选择正常对战方式-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10160,
+                "y": -330
+            }
+        }
+    },
     "剑论九州": {
         "recognition": {
             "type": "OCR",
@@ -318,32 +244,6 @@
             "position": {
                 "x": 8663,
                 "y": 774
-            }
-        }
-    },
-    "海捕今": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    167,
-                    168,
-                    906,
-                    304
-                ],
-                "expected": [
-                    "海今",
-                    "海捕今"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 8671,
-                "y": 968
             }
         }
     },
@@ -372,7 +272,104 @@
             }
         }
     },
-    "魂海渊祭": {
+    "幽之灵脉": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    75,
+                    154,
+                    633
+                ],
+                "expected": [
+                    "幽"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9352,
+                "y": -287
+            }
+        }
+    },
+    "开始灵脉光渊类型选择": {
+        "next": [
+            "炎之灵脉",
+            "冰之灵脉",
+            "光之灵脉",
+            "暗之灵脉",
+            "幽之灵脉",
+            "雷之灵脉"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8818,
+                "y": 53
+            }
+        }
+    },
+    "开始选择扫荡次数": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    530,
+                    72,
+                    207,
+                    68
+                ],
+                "expected": [
+                    "扫荡结算"
+                ]
+            }
+        },
+        "next": [
+            "关卡扫荡开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11348,
+                "y": -697
+            }
+        }
+    },
+    "暗之灵脉": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    75,
+                    154,
+                    633
+                ],
+                "expected": [
+                    "暗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9364,
+                "y": -470
+            }
+        }
+    },
+    "海捕今": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -383,7 +380,8 @@
                     304
                 ],
                 "expected": [
-                    "魂海"
+                    "海今",
+                    "海捕今"
                 ]
             }
         },
@@ -392,8 +390,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8632,
-                "y": 1350
+                "x": 8671,
+                "y": 968
             }
         }
     },
@@ -427,6 +425,34 @@
             }
         }
     },
+    "灵脉光渊": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    167,
+                    168,
+                    906,
+                    304
+                ],
+                "expected": [
+                    "灵脉光渊"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始灵脉光渊类型选择"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8540,
+                "y": 45
+            }
+        }
+    },
     "炎之灵脉": {
         "recognition": {
             "type": "OCR",
@@ -450,217 +476,93 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9234,
-                "y": -1028
+                "x": 9317,
+                "y": -1236
             }
         }
     },
-    "冰之灵脉": {
+    "进入启程界面": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
-                "roi": [
-                    4,
-                    75,
-                    154,
-                    633
-                ],
-                "expected": [
-                    "冰"
+                "template": [
+                    "主界面特征.png"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
+        "post_delay": 2500,
         "$__mpe_code": {
             "position": {
-                "x": 9285,
-                "y": -830
+                "x": 7468,
+                "y": 832
             }
         }
     },
-    "雷之灵脉": {
+    "进入异闻界面": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    4,
-                    75,
-                    154,
-                    633
+                    1164,
+                    69,
+                    97,
+                    566
                 ],
                 "expected": [
-                    "雷"
+                    "异闻"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -33,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "进入试炼挑战界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7441,
+                "y": 453
+            }
+        }
+    },
+    "进入试炼挑战界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1080,
+                    163,
+                    175,
+                    275
+                ],
+                "template": [
+                    "试炼挑战选项图标.png",
+                    "试炼挑战选项图标2.png"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "$__mpe_code": {
-            "position": {
-                "x": 9291,
-                "y": -619
-            }
-        }
-    },
-    "光之灵脉": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    4,
-                    75,
-                    154,
-                    633
-                ],
-                "expected": [
-                    "光"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 9348,
-                "y": -412
-            }
-        }
-    },
-    "暗之灵脉": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    4,
-                    75,
-                    154,
-                    633
-                ],
-                "expected": [
-                    "暗"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 9409,
-                "y": -193
-            }
-        }
-    },
-    "幽之灵脉": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    4,
-                    75,
-                    154,
-                    633
-                ],
-                "expected": [
-                    "幽"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 9405,
-                "y": 46
-            }
-        }
-    },
-    "开始灵脉光渊类型选择": {
         "next": [
-            "炎之灵脉",
-            "冰之灵脉",
-            "光之灵脉",
-            "暗之灵脉",
-            "幽之灵脉",
-            "雷之灵脉"
+            "选择打什么关卡"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8818,
-                "y": 53
-            }
-        }
-    },
-    "选择可扫荡的关卡-灵脉光渊": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    832,
-                    66,
-                    112,
-                    650
-                ],
-                "expected": [
-                    "扫荡"
-                ],
-                "order_by": "Vertical",
-                "index": -1
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 0,
-        "next": [
-            "体力不足任务结束",
-            "开始选择扫荡次数"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 10824,
-                "y": -737
-            }
-        }
-    },
-    "刷取关卡方式选择-灵脉光渊": {
-        "next": [
-            "选择扫荡方式-灵脉光渊",
-            "选择正常对战方式-灵脉光渊"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 10160,
-                "y": -330
-            }
-        }
-    },
-    "选择扫荡方式-灵脉光渊": {
-        "next": [
-            "选择可扫荡的关卡-灵脉光渊",
-            "选择可作战的关卡-灵脉光渊",
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 10490,
-                "y": -586
-            }
-        }
-    },
-    "选择正常对战方式-灵脉光渊": {
-        "next": [
-            "选择可作战的关卡-灵脉光渊"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 10569,
-                "y": -154
+                "x": 7851,
+                "y": 432
             }
         }
     },
@@ -694,11 +596,257 @@
             }
         }
     },
-    "$__mpe_external_返回主界面开始_刷体力": {
+    "选择可扫荡的关卡-灵脉光渊": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    832,
+                    66,
+                    112,
+                    650
+                ],
+                "template": [
+                    "扫荡按钮.png"
+                ],
+                "green_mask": true,
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 0,
+        "next": [
+            "体力不足任务结束",
+            "开始选择扫荡次数"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 11919,
-                "y": 431
+                "x": 10824,
+                "y": -737
+            }
+        }
+    },
+    "选择打什么关卡": {
+        "next": [
+            "灵脉光渊",
+            "创命之间",
+            "三途川",
+            "剑论九州",
+            "海捕今",
+            "幻海魂渊",
+            "魂海渊祭",
+            "[JumpBack]滑动屏幕进行关卡选择"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8161,
+                "y": 396
+            }
+        }
+    },
+    "选择扫荡方式-灵脉光渊": {
+        "post_delay": 2500,
+        "next": [
+            "选择可扫荡的关卡-灵脉光渊",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10490,
+                "y": -586
+            }
+        }
+    },
+    "选择正常对战方式-灵脉光渊": {
+        "next": [
+            "选择可作战的关卡-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10569,
+                "y": -154
+            }
+        }
+    },
+    "雷之灵脉": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    75,
+                    154,
+                    633
+                ],
+                "expected": [
+                    "雷"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9347,
+                "y": -854
+            }
+        }
+    },
+    "魂海渊祭": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    167,
+                    168,
+                    906,
+                    304
+                ],
+                "expected": [
+                    "魂海"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8632,
+                "y": 1350
+            }
+        }
+    },
+    "开始创命之间类型选择": {
+        "next": [
+            "火属相",
+            "冰属相",
+            "雷属相",
+            "暗属相"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8877,
+                "y": 346
+            }
+        }
+    },
+    "火属相": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1,
+                    445,
+                    317,
+                    80
+                ],
+                "template": [
+                    "火属相图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9352,
+                "y": -113
+            }
+        }
+    },
+    "冰属相": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1,
+                    445,
+                    317,
+                    80
+                ],
+                "template": [
+                    "冰属相图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9327,
+                "y": 106
+            }
+        }
+    },
+    "雷属相": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1,
+                    445,
+                    317,
+                    80
+                ],
+                "template": [
+                    "雷属相图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9327,
+                "y": 337
+            }
+        }
+    },
+    "暗属相": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1,
+                    445,
+                    317,
+                    80
+                ],
+                "template": [
+                    "暗属相图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9312,
+                "y": 584
             }
         }
     }

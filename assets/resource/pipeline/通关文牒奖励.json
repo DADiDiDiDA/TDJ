@@ -3,84 +3,23 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786838625144,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\通关文牒奖励.json",
             "savedViewport": {
-                "x": -2785,
-                "y": -64,
-                "zoom": 0.57
+                "x": -2019,
+                "y": 79,
+                "zoom": 0.44
             },
             "filename": "通关文牒奖励",
             "version": "v1.7.6"
         }
     },
-    "通关文牒奖励开始": {
-        "next": [
-            "查看文牒位置"
-        ],
+    "$__mpe_external_返回主界面开始_通关文牒奖励": {
         "$__mpe_code": {
             "position": {
-                "x": 4940,
-                "y": 530
-            }
-        }
-    },
-    "查看文牒位置": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    150,
-                    107,
-                    91,
-                    28
-                ],
-                "expected": [
-                    "通关文牒"
-                ]
-            }
-        },
-        "next": [
-            "进入文牒界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5241,
-                "y": 471
-            }
-        }
-    },
-    "进入文牒界面": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    163,
-                    59,
-                    76,
-                    31
-                ],
-                "template": [
-                    "有可领取奖励图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -31,
-                    11,
-                    0,
-                    0
-                ]
-            }
-        },
-        "next": [
-            "是否有待领取任务-文牒"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5576,
-                "y": 507
+                "x": 6901,
+                "y": 560
             }
         }
     },
@@ -96,6 +35,9 @@
                 ],
                 "template": [
                     "有可领取奖励图标.png"
+                ],
+                "threshold": [
+                    0.5
                 ]
             }
         },
@@ -115,8 +57,46 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5991,
-                "y": 330
+                "x": 5836,
+                "y": 214
+            }
+        }
+    },
+    "查看文牒位置": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    146,
+                    106,
+                    340,
+                    112
+                ],
+                "expected": [
+                    "通关文牒"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -28,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "next": [
+            "是否有待领取任务-文牒",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5296,
+                "y": 463
             }
         }
     },
@@ -143,16 +123,19 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6428,
-                "y": 307
+                "x": 6380,
+                "y": 240
             }
         }
     },
-    "$__mpe_external_返回主界面开始_通关文牒奖励": {
+    "通关文牒奖励开始": {
+        "next": [
+            "查看文牒位置"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 6931,
-                "y": 362
+                "x": 4940,
+                "y": 530
             }
         }
     }

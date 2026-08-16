@@ -3,12 +3,12 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786789208528,
+            "lastSyncTime": 1786839003162,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\关卡内作战开始-组件.json",
             "savedViewport": {
-                "x": -8073,
-                "y": 358,
+                "x": -8448,
+                "y": 279,
                 "zoom": 0.65
             },
             "filename": "关卡内作战开始-组件",
@@ -29,16 +29,16 @@
     },
     "开启自动战斗": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1196,
-                    235,
-                    58,
-                    70
+                    1178,
+                    229,
+                    79,
+                    84
                 ],
-                "expected": [
-                    "自动\n关"
+                "template": [
+                    "自动战斗未开启图标.png"
                 ]
             }
         },
@@ -75,8 +75,7 @@
         },
         "post_delay": 4000,
         "next": [
-            "开启自动战斗",
-            "等待战斗结束"
+            "开启自动战斗"
         ],
         "$__mpe_code": {
             "position": {
@@ -86,10 +85,13 @@
         }
     },
     "未在关卡内-任务结束": {
+        "next": [
+            "返回主界面开始"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 12972,
-                "y": 113
+                "x": 13053,
+                "y": 166
             }
         }
     },
@@ -123,13 +125,14 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    517,
-                    116,
-                    202,
-                    70
+                    512,
+                    103,
+                    249,
+                    133
                 ],
                 "expected": [
-                    "战斗结算"
+                    "战斗结算",
+                    "提示"
                 ]
             }
         },
@@ -138,7 +141,8 @@
         },
         "post_delay": 2500,
         "next": [
-            "确认战斗奖励",
+            "[JumpBack]确认战斗奖励",
+            "[JumpBack]作战失败",
             "未在关卡内-任务结束"
         ],
         "$__mpe_code": {
@@ -157,6 +161,39 @@
             "position": {
                 "x": 13666,
                 "y": -267
+            }
+        }
+    },
+    "作战失败": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    439,
+                    506,
+                    131,
+                    44
+                ],
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 14324,
+                "y": -176
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_关卡内作战开始-组件": {
+        "$__mpe_code": {
+            "position": {
+                "x": 13367,
+                "y": 166
             }
         }
     }

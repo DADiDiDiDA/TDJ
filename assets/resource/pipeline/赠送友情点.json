@@ -3,10 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786838621807,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\赠送友情点.json",
             "savedViewport": {
-                "x": -1923,
-                "y": -105,
-                "zoom": 0.66
+                "x": -4119,
+                "y": -128,
+                "zoom": 0.99
             },
             "filename": "赠送友情点",
             "version": "v1.7.6"
@@ -51,6 +54,62 @@
             }
         }
     },
+    "选择友情点全部赠送-好友": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    219,
+                    617,
+                    129,
+                    50
+                ],
+                "expected": [
+                    "全部赠送"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择友情点全部领取-好友"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4026,
+                "y": 415
+            }
+        }
+    },
+    "选择友情点全部领取-好友": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    462,
+                    612,
+                    126,
+                    58
+                ],
+                "expected": [
+                    "全部领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4490,
+                "y": 416
+            }
+        }
+    },
     "选择所有好友类别-好友": {
         "recognition": {
             "type": "OCR",
@@ -79,52 +138,10 @@
             }
         }
     },
-    "选择友情点全部赠送-好友": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    219,
-                    617,
-                    129,
-                    50
-                ],
-                "expected": [
-                    "全部赠送"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
+    "$__mpe_external_返回主界面开始_赠送友情点": {
         "$__mpe_code": {
             "position": {
-                "x": 4026,
-                "y": 415
-            }
-        }
-    },
-    "选择友情点全部领取-好友": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    462,
-                    612,
-                    126,
-                    58
-                ],
-                "expected": [
-                    "全部领取"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 4569,
+                "x": 4829,
                 "y": 399
             }
         }

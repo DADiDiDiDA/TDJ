@@ -3,24 +3,23 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1786838627222,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\领取历练奖励.json",
             "savedViewport": {
-                "x": -1843,
-                "y": -10,
-                "zoom": 0.66
+                "x": -1713,
+                "y": 69,
+                "zoom": 0.65
             },
             "filename": "领取历练奖励",
             "version": "v1.7.6"
         }
     },
-    "领取历练奖励开始": {
-        "next": [
-            "历练界面是否有待领取奖励",
-            "领取历练奖励结束"
-        ],
+    "$__mpe_external_返回主界面开始_领取历练奖励": {
         "$__mpe_code": {
             "position": {
-                "x": 2710,
-                "y": 460
+                "x": 4280,
+                "y": 713
             }
         }
     },
@@ -37,7 +36,10 @@
                 "template": [
                     "有可领取奖励图标.png"
                 ],
-                "green_mask": true
+                "green_mask": true,
+                "threshold": [
+                    0.5
+                ]
             }
         },
         "action": {
@@ -52,57 +54,12 @@
             }
         },
         "next": [
-            "每日任务是否有待领取奖励",
-            "返回主界面开始"
+            "开始确认每日任务是否有奖励"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3030,
-                "y": 264
-            }
-        }
-    },
-    "每日任务是否有待领取奖励": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1085,
-                    182,
-                    121,
-                    97
-                ],
-                "template": [
-                    "有可领取奖励图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    39,
-                    19,
-                    0,
-                    0
-                ]
-            }
-        },
-        "next": [
-            "有没有一键领取"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3421,
-                "y": 154
-            }
-        }
-    },
-    "领取历练奖励结束": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3102,
-                "y": 646
+                "x": 2966,
+                "y": 245
             }
         }
     },
@@ -129,11 +86,75 @@
             }
         }
     },
-    "$__mpe_external_返回主界面开始_领取历练奖励": {
+    "每日任务是否有待领取奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1085,
+                    182,
+                    121,
+                    97
+                ],
+                "template": [
+                    "有可领取奖励图标.png"
+                ],
+                "threshold": [
+                    0.5
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    39,
+                    19,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "有没有一键领取"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 4280,
-                "y": 713
+                "x": 3584,
+                "y": 29
+            }
+        }
+    },
+    "领取历练奖励开始": {
+        "next": [
+            "历练界面是否有待领取奖励",
+            "领取历练奖励结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2611,
+                "y": 441
+            }
+        }
+    },
+    "领取历练奖励结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3066,
+                "y": 672
+            }
+        }
+    },
+    "开始确认每日任务是否有奖励": {
+        "post_delay": 3000,
+        "next": [
+            "每日任务是否有待领取奖励",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3213,
+                "y": 179
             }
         }
     }

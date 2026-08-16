@@ -3,41 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786783228172,
+            "lastSyncTime": 1786839416782,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -258,
-                "y": -265,
-                "zoom": 0.57
+                "x": -547,
+                "y": -816,
+                "zoom": 0.84
             },
             "filename": "返回主界面",
             "version": "v1.7.6"
-        }
-    },
-    "下方点击空白处继续": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    497,
-                    648,
-                    277,
-                    52
-                ],
-                "expected": [
-                    "空白处继续"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1542,
-                "y": 685
-            }
         }
     },
     "主界面特征1": {
@@ -75,6 +50,31 @@
             "position": {
                 "x": 2067,
                 "y": -522
+            }
+        }
+    },
+    "关闭公告界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1149,
+                    27,
+                    92,
+                    79
+                ],
+                "template": [
+                    "公告叉号.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1529,
+                "y": 256
             }
         }
     },
@@ -123,6 +123,31 @@
             }
         }
     },
+    "开始扎营": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    85,
+                    661,
+                    108,
+                    57
+                ],
+                "expected": [
+                    "扎营"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1573,
+                "y": 691
+            }
+        }
+    },
     "按Esc返回": {
         "action": {
             "type": "ClickKey",
@@ -135,8 +160,34 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1525,
-                "y": 1091
+                "x": 1491,
+                "y": 1458
+            }
+        }
+    },
+    "界面下方处理继续": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    498,
+                    558,
+                    252,
+                    154
+                ],
+                "expected": [
+                    "空白处继续",
+                    "进入游戏"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1555,
+                "y": 880
             }
         }
     },
@@ -160,8 +211,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1536,
-                "y": 886
+                "x": 1546,
+                "y": 1098
             }
         }
     },
@@ -171,9 +222,12 @@
         "next": [
             "[JumpBack]返回过头了吗",
             "判断是否在主界面",
+            "[JumpBack]关闭公告界面",
+            "[JumpBack]左上角返回箭头",
             "[JumpBack]开始扎营",
-            "[JumpBack]下方点击空白处继续",
+            "[JumpBack]界面下方处理继续",
             "[JumpBack]等级提升",
+            "[JumpBack]关卡失败退出",
             "[JumpBack]按Esc返回"
         ],
         "$__mpe_code": {
@@ -216,18 +270,18 @@
             }
         }
     },
-    "开始扎营": {
+    "关卡失败退出": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    85,
-                    661,
-                    108,
-                    57
+                    1148,
+                    567,
+                    87,
+                    97
                 ],
                 "expected": [
-                    "扎营"
+                    "退"
                 ]
             }
         },
@@ -236,8 +290,33 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1537,
-                "y": 475
+                "x": 1524,
+                "y": 1267
+            }
+        }
+    },
+    "左上角返回箭头": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    12,
+                    4,
+                    83,
+                    74
+                ],
+                "template": [
+                    "左上角返回箭头.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1545,
+                "y": 514
             }
         }
     }
