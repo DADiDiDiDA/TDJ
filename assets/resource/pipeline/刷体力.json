@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786838618116,
+            "lastSyncTime": 1786878636213,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -5304,
-                "y": 348,
-                "zoom": 0.57
+                "x": -6767,
+                "y": 791,
+                "zoom": 0.65
             },
             "filename": "刷体力",
             "version": "v1.7.6"
@@ -75,7 +75,8 @@
                     63
                 ],
                 "expected": [
-                    "取用体力"
+                    "取用体力",
+                    "恢复体力"
                 ]
             }
         },
@@ -145,9 +146,37 @@
             }
         }
     },
+    "冰属相": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1,
+                    445,
+                    317,
+                    80
+                ],
+                "template": [
+                    "冰属相图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9327,
+                "y": 106
+            }
+        }
+    },
     "创命之间": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     167,
@@ -155,8 +184,8 @@
                     906,
                     304
                 ],
-                "expected": [
-                    "创命"
+                "template": [
+                    "创命之间图标.png"
                 ]
             }
         },
@@ -168,8 +197,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8617,
-                "y": 346
+                "x": 8598,
+                "y": 290
             }
         }
     },
@@ -300,6 +329,20 @@
             }
         }
     },
+    "开始创命之间类型选择": {
+        "next": [
+            "火属相",
+            "冰属相",
+            "雷属相",
+            "暗属相"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8877,
+                "y": 346
+            }
+        }
+    },
     "开始灵脉光渊类型选择": {
         "next": [
             "炎之灵脉",
@@ -369,6 +412,34 @@
             }
         }
     },
+    "暗属相": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1,
+                    445,
+                    317,
+                    80
+                ],
+                "template": [
+                    "暗属相图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9312,
+                "y": 584
+            }
+        }
+    },
     "海捕今": {
         "recognition": {
             "type": "OCR",
@@ -425,9 +496,37 @@
             }
         }
     },
+    "火属相": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1,
+                    445,
+                    317,
+                    80
+                ],
+                "template": [
+                    "火属相图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "刷取关卡方式选择-灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9352,
+                "y": -113
+            }
+        }
+    },
     "灵脉光渊": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     167,
@@ -435,8 +534,8 @@
                     906,
                     304
                 ],
-                "expected": [
-                    "灵脉光渊"
+                "template": [
+                    "灵脉光渊图标.png"
                 ]
             }
         },
@@ -607,7 +706,8 @@
                     650
                 ],
                 "template": [
-                    "扫荡按钮.png"
+                    "扫荡按钮.png",
+                    "扫荡按钮2.png"
                 ],
                 "green_mask": true,
                 "order_by": "Vertical",
@@ -624,12 +724,13 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10824,
-                "y": -737
+                "x": 10836,
+                "y": -878
             }
         }
     },
     "选择打什么关卡": {
+        "post_delay": 2000,
         "next": [
             "灵脉光渊",
             "创命之间",
@@ -699,101 +800,6 @@
             }
         }
     },
-    "魂海渊祭": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    167,
-                    168,
-                    906,
-                    304
-                ],
-                "expected": [
-                    "魂海"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 8632,
-                "y": 1350
-            }
-        }
-    },
-    "开始创命之间类型选择": {
-        "next": [
-            "火属相",
-            "冰属相",
-            "雷属相",
-            "暗属相"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8877,
-                "y": 346
-            }
-        }
-    },
-    "火属相": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1,
-                    445,
-                    317,
-                    80
-                ],
-                "template": [
-                    "火属相图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "刷取关卡方式选择-灵脉光渊"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 9352,
-                "y": -113
-            }
-        }
-    },
-    "冰属相": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1,
-                    445,
-                    317,
-                    80
-                ],
-                "template": [
-                    "冰属相图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "刷取关卡方式选择-灵脉光渊"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 9327,
-                "y": 106
-            }
-        }
-    },
     "雷属相": {
         "recognition": {
             "type": "TemplateMatch",
@@ -822,31 +828,28 @@
             }
         }
     },
-    "暗属相": {
+    "魂海渊祭": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
                 "roi": [
-                    1,
-                    445,
-                    317,
-                    80
+                    167,
+                    168,
+                    906,
+                    304
                 ],
-                "template": [
-                    "暗属相图标.png"
+                "expected": [
+                    "魂海"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "next": [
-            "刷取关卡方式选择-灵脉光渊"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 9312,
-                "y": 584
+                "x": 8632,
+                "y": 1350
             }
         }
     }

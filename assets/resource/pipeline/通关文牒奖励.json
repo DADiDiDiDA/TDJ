@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786838625144,
+            "lastSyncTime": 1786878165062,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\通关文牒奖励.json",
             "savedViewport": {
-                "x": -2019,
-                "y": 79,
-                "zoom": 0.44
+                "x": -3774,
+                "y": -222,
+                "zoom": 0.86
             },
             "filename": "通关文牒奖励",
             "version": "v1.7.6"
@@ -64,29 +64,22 @@
     },
     "查看文牒位置": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    146,
-                    106,
-                    340,
-                    112
+                    149,
+                    59,
+                    355,
+                    161
                 ],
-                "expected": [
-                    "通关文牒"
-                ]
+                "template": [
+                    "通关文牒图标.png"
+                ],
+                "green_mask": true
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    -28,
-                    0,
-                    0
-                ]
-            }
+            "type": "Click"
         },
         "post_delay": 3000,
         "next": [
@@ -112,6 +105,9 @@
                 ],
                 "template": [
                     "一键领取图标.png"
+                ],
+                "threshold": [
+                    0.5
                 ]
             }
         },

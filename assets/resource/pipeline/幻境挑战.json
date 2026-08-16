@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786842312630,
+            "lastSyncTime": 1786878319823,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\幻境挑战.json",
             "savedViewport": {
-                "x": -5388,
-                "y": -172,
-                "zoom": 0.65
+                "x": -5962,
+                "y": -182,
+                "zoom": 0.86
             },
             "filename": "幻境挑战",
             "version": "v1.7.6"
@@ -31,14 +31,15 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8886,
-                "y": 506
+                "x": 8913,
+                "y": 499
             }
         }
     },
     "幻境挑战开始": {
         "next": [
-            "开始进入幻境上级菜单-幻境挑战"
+            "进入幻境菜单-幻境挑战",
+            "[JumpBack]开始进入幻境上级菜单-幻境挑战"
         ],
         "$__mpe_code": {
             "position": {
@@ -65,8 +66,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8326,
-                "y": 499
+                "x": 8342,
+                "y": 494
             }
         }
     },
@@ -100,10 +101,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1080,
-                    511,
-                    181,
-                    205
+                    1071,
+                    505,
+                    205,
+                    211
                 ],
                 "template": [
                     "主界面特征.png"
@@ -113,13 +114,35 @@
         "action": {
             "type": "Click"
         },
+        "$__mpe_code": {
+            "position": {
+                "x": 7471,
+                "y": 556
+            }
+        }
+    },
+    "检查剩余挑战次数": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    902,
+                    12,
+                    84,
+                    47
+                ],
+                "expected": [
+                    "0/5"
+                ]
+            }
+        },
         "next": [
-            "进入幻境菜单-幻境挑战"
+            "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7472,
-                "y": 387
+                "x": 8155,
+                "y": 247
             }
         }
     },
@@ -146,8 +169,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8586,
-                "y": 499
+                "x": 8614,
+                "y": 487
             }
         }
     },
@@ -199,7 +222,8 @@
                 ],
                 "expected": [
                     "幻境",
-                    "幻镜"
+                    "幻镜",
+                    "镜"
                 ]
             }
         },
@@ -216,12 +240,13 @@
         },
         "post_delay": 2500,
         "next": [
+            "检查剩余挑战次数",
             "选择第一位对手-幻境挑战"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7781,
-                "y": 515
+                "x": 7724,
+                "y": 313
             }
         }
     },
@@ -252,6 +277,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "next": [
             "开始自动战斗-幻境挑战"
         ],

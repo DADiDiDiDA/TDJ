@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786844308368,
+            "lastSyncTime": 1786865003192,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\山河志派遣.json",
             "savedViewport": {
-                "x": -3022,
-                "y": -114,
-                "zoom": 0.65
+                "x": -2746,
+                "y": -60,
+                "zoom": 0.57
             },
             "filename": "山河志派遣",
             "version": "v1.7.6"
@@ -18,8 +18,8 @@
     "$__mpe_external_返回主界面开始_山河志派遣": {
         "$__mpe_code": {
             "position": {
-                "x": 8143,
-                "y": 574
+                "x": 8036,
+                "y": 1120
             }
         }
     },
@@ -114,18 +114,33 @@
             }
         }
     },
+    "开始检查是否满足派遣要求": {
+        "next": [
+            "判断是否满足派遣任务",
+            "满足派遣条件开始执行",
+            "派遣队列已经上限"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6393,
+                "y": 536
+            }
+        }
+    },
     "开始领取山河志奖励": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    65,
-                    679,
-                    93,
-                    30
+                    479,
+                    634,
+                    351,
+                    78
                 ],
                 "expected": [
-                    "可领取"
+                    "可领取",
+                    "空白处继续",
+                    "点击屏幕"
                 ]
             }
         },
@@ -134,8 +149,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5605,
-                "y": 185
+                "x": 5664,
+                "y": 187
             }
         }
     },
@@ -165,6 +180,31 @@
             "position": {
                 "x": 6081,
                 "y": 438
+            }
+        }
+    },
+    "派遣队列已经上限": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    921,
+                    634,
+                    160,
+                    76
+                ],
+                "expected": [
+                    "接受委托"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6894,
+                "y": 912
             }
         }
     },
@@ -201,7 +241,7 @@
     },
     "第一行都上阵了吗": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     438,
@@ -209,8 +249,8 @@
                     99,
                     43
                 ],
-                "expected": [
-                    "已上阵"
+                "template": [
+                    "已上阵图标.png"
                 ]
             }
         },
@@ -263,6 +303,7 @@
         },
         "post_delay": 2500,
         "next": [
+            "[JumpBack]新建节点2",
             "[JumpBack]开始领取山河志奖励",
             "选择任务地区"
         ],
@@ -285,7 +326,11 @@
                 ],
                 "expected": [
                     "中立",
-                    "冷淡"
+                    "冷淡",
+                    "友好",
+                    "亲密",
+                    "尊敬",
+                    "显赫"
                 ]
             }
         },
@@ -324,15 +369,29 @@
             }
         }
     },
-    "开始检查是否满足派遣要求": {
-        "next": [
-            "判断是否满足派遣任务",
-            "满足派遣条件开始执行"
-        ],
+    "新建节点2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    34,
+                    591,
+                    163,
+                    128
+                ],
+                "template": [
+                    "山海志可领取奖励.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
         "$__mpe_code": {
             "position": {
-                "x": 6416,
-                "y": 482
+                "x": 5595,
+                "y": -154
             }
         }
     }

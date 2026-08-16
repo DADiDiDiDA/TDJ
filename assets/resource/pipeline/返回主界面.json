@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786839416782,
+            "lastSyncTime": 1786864487605,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -547,
-                "y": -816,
-                "zoom": 0.84
+                "x": -2406,
+                "y": 927,
+                "zoom": 1.5
             },
             "filename": "返回主界面",
             "version": "v1.7.6"
@@ -20,10 +20,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1106,
-                    558,
-                    155,
-                    161
+                    1094,
+                    543,
+                    183,
+                    172
                 ],
                 "template": [
                     "主界面特征.png"
@@ -50,6 +50,31 @@
             "position": {
                 "x": 2067,
                 "y": -522
+            }
+        }
+    },
+    "关卡失败退出": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1148,
+                    567,
+                    87,
+                    97
+                ],
+                "expected": [
+                    "退"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1524,
+                "y": 1267
             }
         }
     },
@@ -120,6 +145,31 @@
             "position": {
                 "x": 1831,
                 "y": -219
+            }
+        }
+    },
+    "左上角返回箭头": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    12,
+                    4,
+                    83,
+                    74
+                ],
+                "template": [
+                    "左上角返回箭头.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1545,
+                "y": 514
             }
         }
     },
@@ -267,56 +317,6 @@
             "position": {
                 "x": 1478,
                 "y": -220
-            }
-        }
-    },
-    "关卡失败退出": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1148,
-                    567,
-                    87,
-                    97
-                ],
-                "expected": [
-                    "退"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1524,
-                "y": 1267
-            }
-        }
-    },
-    "左上角返回箭头": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    12,
-                    4,
-                    83,
-                    74
-                ],
-                "template": [
-                    "左上角返回箭头.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1545,
-                "y": 514
             }
         }
     }
