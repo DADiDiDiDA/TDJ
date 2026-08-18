@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786865003192,
+            "lastSyncTime": 1787053027209,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\山河志派遣.json",
             "savedViewport": {
-                "x": -2746,
-                "y": -60,
-                "zoom": 0.57
+                "x": -2978,
+                "y": 137,
+                "zoom": 0.49
             },
             "filename": "山河志派遣",
             "version": "v1.7.6"
@@ -29,8 +29,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7758,
-                "y": 539
+                "x": 7719,
+                "y": 634
             }
         }
     },
@@ -39,13 +39,14 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1042,
-                    591,
-                    204,
-                    116
+                    1036,
+                    590,
+                    233,
+                    110
                 ],
                 "template": [
-                    "未激活派遣图标.png"
+                    "未激活派遣图标.png",
+                    "加入队列图标.png"
                 ],
                 "threshold": [
                     0.9
@@ -55,16 +56,18 @@
         "next": [
             "第一行都上阵了吗",
             "寻找已上阵角色",
-            "选择第一位角色"
+            "选择第一位角色",
+            "任务失败返回主界面-山河志"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6812,
-                "y": 452
+                "x": 6602,
+                "y": 242
             }
         }
     },
     "寻找已上阵角色": {
+        "max_hit": 5,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -98,8 +101,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7294,
-                "y": 361
+                "x": 7133,
+                "y": -182
             }
         }
     },
@@ -109,8 +112,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4950,
-                "y": 414
+                "x": 4374,
+                "y": 410
             }
         }
     },
@@ -122,8 +125,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6393,
-                "y": 536
+                "x": 6173,
+                "y": 660
             }
         }
     },
@@ -149,8 +152,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5664,
-                "y": 187
+                "x": 5214,
+                "y": 169
             }
         }
     },
@@ -178,8 +181,34 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6081,
-                "y": 438
+                "x": 5597,
+                "y": 433
+            }
+        }
+    },
+    "新建节点2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    34,
+                    591,
+                    163,
+                    128
+                ],
+                "template": [
+                    "山海志可领取奖励.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 5137,
+                "y": -200
             }
         }
     },
@@ -203,8 +232,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6894,
-                "y": 912
+                "x": 6713,
+                "y": 903
             }
         }
     },
@@ -219,7 +248,8 @@
                     108
                 ],
                 "template": [
-                    "已激活派遣图标.png"
+                    "已激活派遣图标.png",
+                    "已激活的加入队列图标.png"
                 ],
                 "threshold": [
                     0.9
@@ -234,8 +264,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6744,
-                "y": 115
+                "x": 6003,
+                "y": 179
             }
         }
     },
@@ -244,13 +274,16 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    438,
-                    158,
-                    99,
-                    43
+                    439,
+                    157,
+                    109,
+                    57
                 ],
                 "template": [
                     "已上阵图标.png"
+                ],
+                "threshold": [
+                    0.5
                 ]
             }
         },
@@ -270,8 +303,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7213,
-                "y": 45
+                "x": 7139,
+                "y": -560
             }
         }
     },
@@ -309,8 +342,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5297,
-                "y": 353
+                "x": 4789,
+                "y": 361
             }
         }
     },
@@ -342,12 +375,13 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5674,
-                "y": 421
+                "x": 5270,
+                "y": 461
             }
         }
     },
     "选择第一位角色": {
+        "max_hit": 2,
         "action": {
             "type": "Click",
             "param": {
@@ -364,34 +398,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7352,
-                "y": 770
-            }
-        }
-    },
-    "新建节点2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    34,
-                    591,
-                    163,
-                    128
-                ],
-                "template": [
-                    "山海志可领取奖励.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 1500,
-        "$__mpe_code": {
-            "position": {
-                "x": 5595,
-                "y": -154
+                "x": 7205,
+                "y": 236
             }
         }
     }

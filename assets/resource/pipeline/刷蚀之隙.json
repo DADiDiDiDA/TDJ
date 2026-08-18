@@ -1,0 +1,298 @@
+{
+    "$__mpe_config_刷蚀之隙": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -10929,
+                "y": 1144,
+                "zoom": 0.66
+            },
+            "filename": "刷蚀之隙",
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_返回主界面开始_刷蚀之隙": {
+        "$__mpe_code": {
+            "position": {
+                "x": 18672,
+                "y": -1549
+            }
+        }
+    },
+    "刷取第一章-刷蚀之隙": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    34,
+                    496,
+                    1235,
+                    126
+                ],
+                "expected": [
+                    "第一章"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择刷取什么难度-刷蚀之隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 16945,
+                "y": -1419
+            }
+        }
+    },
+    "刷蚀之隙开始": {
+        "next": [
+            "进入启程界面-刷蚀之隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 15158,
+                "y": -981
+            }
+        }
+    },
+    "寻找已通关关卡-刷蚀之隙": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    533,
+                    20,
+                    322,
+                    644
+                ],
+                "expected": [
+                    "通"
+                ],
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    124,
+                    32,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 18098,
+                "y": -1101
+            }
+        }
+    },
+    "开始扫荡-刷蚀之隙": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    761,
+                    556,
+                    113,
+                    49
+                ],
+                "expected": [
+                    "扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 18181,
+                "y": -1568
+            }
+        }
+    },
+    "滑动关卡进行寻找-刷蚀之隙": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1159,
+                    528,
+                    50,
+                    24
+                ],
+                "end": [
+                    [
+                        85,
+                        532,
+                        36,
+                        19
+                    ]
+                ],
+                "duration": [
+                    1000
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 16935,
+                "y": -1021
+            }
+        }
+    },
+    "返回关卡最前面-刷蚀之隙": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    288,
+                    540,
+                    36,
+                    28
+                ],
+                "end": [
+                    [
+                        876,
+                        569,
+                        50,
+                        21
+                    ]
+                ]
+            }
+        },
+        "repeat": 11,
+        "repeat_delay": 500,
+        "next": [
+            "选择刷第几章-刷蚀之隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 16133,
+                "y": -1087
+            }
+        }
+    },
+    "进入启程界面-刷蚀之隙": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1084,
+                    515,
+                    193,
+                    201
+                ],
+                "template": [
+                    "主界面特征.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "进入蚀之隙界面-刷蚀之隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 15477,
+                "y": -1089
+            }
+        }
+    },
+    "进入蚀之隙界面-刷蚀之隙": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1188,
+                    104,
+                    84,
+                    460
+                ],
+                "template": [
+                    "蚀之隙图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回关卡最前面-刷蚀之隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 15779,
+                "y": -1075
+            }
+        }
+    },
+    "选择刷取什么难度-刷蚀之隙": {
+        "post_delay": 1500,
+        "next": [
+            "选择普通难度-刷蚀之隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 17314,
+                "y": -1477
+            }
+        }
+    },
+    "选择刷第几章-刷蚀之隙": {
+        "next": [
+            "刷取第一章-刷蚀之隙",
+            "[JumpBack]滑动关卡进行寻找-刷蚀之隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 16620,
+                "y": -1207
+            }
+        }
+    },
+    "选择普通难度-刷蚀之隙": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1093,
+                    145,
+                    186,
+                    426
+                ],
+                "template": [
+                    "蚀之隙普通难度.png",
+                    "蚀之隙普通难度2.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始扫荡-刷蚀之隙",
+            "[JumpBack]寻找已通关关卡-刷蚀之隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 17659,
+                "y": -1516
+            }
+        }
+    }
+}

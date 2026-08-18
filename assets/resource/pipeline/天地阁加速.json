@@ -1,0 +1,122 @@
+{
+    "$__mpe_config_天地阁加速": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787025638025,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\天地阁加速.json",
+            "savedViewport": {
+                "x": -10242,
+                "y": -571,
+                "zoom": 1.5
+            },
+            "filename": "天地阁加速",
+            "version": "v1.7.6"
+        }
+    },
+    "天地阁加速开始": {
+        "next": [
+            "进入天地阁"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7228,
+                "y": 507
+            }
+        }
+    },
+    "进入天地阁": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    284,
+                    591,
+                    830,
+                    100
+                ],
+                "template": [
+                    "天地阁图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择动态界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7640,
+                "y": 413
+            }
+        }
+    },
+    "选择动态界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1174,
+                    381,
+                    63,
+                    47
+                ],
+                "expected": [
+                    "动态"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "一键加速盟友"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7976,
+                "y": 388
+            }
+        }
+    },
+    "一键加速盟友": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    972,
+                    629,
+                    162,
+                    66
+                ],
+                "template": [
+                    "一键加速图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8331,
+                "y": 348
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_天地阁加速": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8599,
+                "y": 472
+            }
+        }
+    }
+}

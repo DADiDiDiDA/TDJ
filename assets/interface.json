@@ -1,345 +1,254 @@
-{
-    "interface_version": 2,
-    "name": "TDJ",
-    "description": "",
-    "license": "MIT",
-    "welcome": "首次使用！欢迎使用 MAA!",
-    "version": "0.1.0",
-    "controller": [
-        {
-            "name": "桌面端",
-            "type": "Win32",
-            "win32": {
-                "class_regex": ".*",
-                "window_regex": "天地劫",
-                "screencap": "PrintWindow",
-                "mouse": "PostMessageWithCursorPos",
-                "keyboard": "PostMessageWithCursorPos"
-            }
-        },
-        {
-            "name": "安卓端",
-            "type": "Adb",
-            "display_short_side": 720
-        }
-    ],
-    "resource": [
-        {
-            "name": "官服",
-            "path": [
-                "./resource"
-            ]
-        }
-    ],
-    "task": [
-        {
-            "name": "进入游戏",
-            "entry": "返回主界面开始",
-            "default_check": true,
-            "doc": "自动登录游戏并进入主界面（启动游戏最好在设置里执行，这个不能开启游戏）"
-        },
-        {
-            "name": "领取邮件",
-            "entry": "领取邮件开始",
-            "default_check": true,
-            "doc": "自动领取邮件奖励"
-        },
-        {
-            "name": "赠送友情点",
-            "entry": "赠送友情点开始",
-            "default_check": true,
-            "doc": "自动向好友赠送友情点（只有同服好友）"
-        },
-        {
-            "name": "山河志派遣",
-            "entry": "山河志派遣开始",
-            "default_check": true,
-            "doc": "自动进行山河志派遣任务"
-        },
-        {
-            "name": "刷体力第一次",
-            "entry": "刷体力开始",
-            "default_check": true,
-            "option": ["选择打什么关卡"],
-            "doc": "第一次体力刷取，扫荡（自动选择上限次数）或自动战斗（只能自动打一次）"
-        },
-        {
-            "name": "刷体力第二次",
-            "entry": "刷体力开始",
-            "default_check": true,
-            "option": ["选择打什么关卡"],
-            "doc": "第二次体力刷取，消耗体力扫荡或自动战斗"
-        },
-        {
-            "name": "通关文牒奖励",
-            "entry": "通关文牒奖励开始",
-            "default_check": true,
-            "doc": "自动领取通关文牒的奖励"
-        },
-        {
-            "name": "幻境挑战",
-            "entry": "幻境挑战开始",
-            "default_check": true,
-            "doc": "自动进行一次幻境挑战"
-        },
-        {
-            "name": "领取历练奖励",
-            "entry": "领取历练奖励开始",
-            "default_check": true,
-            "doc": "自动领取历练任务的每日奖励"
-        }
-    ],
-    "option": {
-        "选择打什么关卡": {
-            "type": "select",
-            "label": "选择关卡",
-            "default": "灵脉光渊",
-            "cases": [
-                {
-                    "name": "灵脉光渊",
-                    "label": "灵脉光渊",
-                    "option": ["开始灵脉光渊类型选择", "刷取关卡方式选择-灵脉光渊"],
-                    "pipeline_override": {
-                        "选择打什么关卡": {
-                            "next": [
-                                "灵脉光渊",
-                                "[JumpBack]滑动屏幕进行关卡选择"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "创命之间",
-                    "label": "创命之间",
-                    "option": ["开始创命之间类型选择", "刷取关卡方式选择-灵脉光渊"],
-                    "pipeline_override": {
-                        "选择打什么关卡": {
-                            "next": [
-                                "创命之间",
-                                "[JumpBack]滑动屏幕进行关卡选择"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "三途川",
-                    "label": "三途川",
-                    "option": ["刷取关卡方式选择-灵脉光渊"],
-                    "pipeline_override": {
-                        "选择打什么关卡": {
-                            "next": [
-                                "三途川",
-                                "[JumpBack]滑动屏幕进行关卡选择"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "剑论九州",
-                    "label": "剑论九州",
-                    "option": ["刷取关卡方式选择-灵脉光渊"],
-                    "pipeline_override": {
-                        "选择打什么关卡": {
-                            "next": [
-                                "剑论九州",
-                                "[JumpBack]滑动屏幕进行关卡选择"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "海捕今",
-                    "label": "海捕今",
-                    "option": ["刷取关卡方式选择-灵脉光渊"],
-                    "pipeline_override": {
-                        "选择打什么关卡": {
-                            "next": [
-                                "海捕今",
-                                "[JumpBack]滑动屏幕进行关卡选择"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "幻海魂渊",
-                    "label": "幻海魂渊",
-                    "option": ["刷取关卡方式选择-灵脉光渊"],
-                    "pipeline_override": {
-                        "选择打什么关卡": {
-                            "next": [
-                                "幻海魂渊",
-                                "[JumpBack]滑动屏幕进行关卡选择"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "魂海渊祭",
-                    "label": "魂海渊祭",
-                    "option": ["刷取关卡方式选择-灵脉光渊"],
-                    "pipeline_override": {
-                        "选择打什么关卡": {
-                            "next": [
-                                "魂海渊祭",
-                                "[JumpBack]滑动屏幕进行关卡选择"
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
-        "开始灵脉光渊类型选择": {
-            "type": "select",
-            "label": "灵脉光渊 - 选择属性",
-            "default": "炎之灵脉",
-            "cases": [
-                {
-                    "name": "炎之灵脉",
-                    "label": "炎之灵脉",
-                    "pipeline_override": {
-                        "开始灵脉光渊类型选择": {
-                            "next": [
-                                "炎之灵脉"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "冰之灵脉",
-                    "label": "冰之灵脉",
-                    "pipeline_override": {
-                        "开始灵脉光渊类型选择": {
-                            "next": [
-                                "冰之灵脉"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "雷之灵脉",
-                    "label": "雷之灵脉",
-                    "pipeline_override": {
-                        "开始灵脉光渊类型选择": {
-                            "next": [
-                                "雷之灵脉"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "光之灵脉",
-                    "label": "光之灵脉",
-                    "pipeline_override": {
-                        "开始灵脉光渊类型选择": {
-                            "next": [
-                                "光之灵脉"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "暗之灵脉",
-                    "label": "暗之灵脉",
-                    "pipeline_override": {
-                        "开始灵脉光渊类型选择": {
-                            "next": [
-                                "暗之灵脉"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "幽之灵脉",
-                    "label": "幽之灵脉",
-                    "pipeline_override": {
-                        "开始灵脉光渊类型选择": {
-                            "next": [
-                                "幽之灵脉"
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
-        "开始创命之间类型选择": {
-            "type": "select",
-            "label": "创命之间 - 选择属性",
-            "default": "火属相",
-            "cases": [
-                {
-                    "name": "火属相",
-                    "label": "火属相",
-                    "pipeline_override": {
-                        "开始创命之间类型选择": {
-                            "next": [
-                                "火属相"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "冰属相",
-                    "label": "冰属相",
-                    "pipeline_override": {
-                        "开始创命之间类型选择": {
-                            "next": [
-                                "冰属相"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "雷属相",
-                    "label": "雷属相",
-                    "pipeline_override": {
-                        "开始创命之间类型选择": {
-                            "next": [
-                                "雷属相"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "暗属相",
-                    "label": "暗属相",
-                    "pipeline_override": {
-                        "开始创命之间类型选择": {
-                            "next": [
-                                "暗属相"
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
-        "刷取关卡方式选择-灵脉光渊": {
-            "type": "select",
-            "label": "选择刷取方式",
-            "default": "扫荡",
-            "cases": [
-                {
-                    "name": "扫荡",
-                    "label": "扫荡",
-                    "pipeline_override": {
-                        "刷取关卡方式选择-灵脉光渊": {
-                            "next": [
-                                "选择扫荡方式-灵脉光渊"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "正常对战",
-                    "label": "正常对战",
-                    "pipeline_override": {
-                        "刷取关卡方式选择-灵脉光渊": {
-                            "next": [
-                                "选择正常对战方式-灵脉光渊"
-                            ]
-                        }
-                    }
-                }
-            ]
-        }
-    }
+{  
+    "interface_version": 2,  
+    "name": "TDJ",  
+    "description": "",  
+    "license": "MIT",  
+    "welcome": "首次使用！欢迎使用 MAA!",  
+    "version": "0.1.0",  
+    "controller": [  
+        {  
+            "name": "桌面端",  
+            "type": "Win32",  
+            "win32": {  
+                "class_regex": ".*",  
+                "window_regex": "天地劫",  
+                "screencap": "PrintWindow",  
+                "mouse": "PostMessageWithCursorPos",  
+                "keyboard": "PostMessageWithCursorPos"  
+            }  
+        },  
+        {  
+            "name": "安卓端",  
+            "type": "Adb",  
+            "display_short_side": 720  
+        }  
+    ],  
+    "resource": [  
+        {  
+            "name": "官服",  
+            "path": [  
+                "./resource"  
+            ]  
+        }  
+    ],  
+    "task": [  
+        {  
+            "name": "进入游戏",  
+            "entry": "返回主界面开始",  
+            "default_check": true,  
+            "doc": "自动登录游戏并进入主界面（启动游戏最好在设置里执行，这个不能开启游戏）"  
+        },  
+        {  
+            "name": "领取邮件",  
+            "entry": "领取邮件开始",  
+            "default_check": true,  
+            "doc": "自动领取邮件奖励"  
+        },  
+        {  
+            "name": "赠送友情点",  
+            "entry": "赠送友情点开始",  
+            "default_check": true,  
+            "doc": "自动向好友赠送友情点（只有同服好友）"  
+        },  
+        {  
+            "name": "山河志派遣",  
+            "entry": "山河志派遣开始",  
+            "default_check": true,  
+            "doc": "自动进行山河志派遣任务"  
+        },  
+        {  
+            "name": "刷体力第一次",  
+            "entry": "刷体力开始",  
+            "default_check": true,  
+            "option": ["选择打什么关卡", "自定义扫荡次数上限"],  
+            "doc": "第一次体力刷取，扫荡（自动选择上限次数）或自动战斗（只能自动打一次）"  
+        },  
+        {  
+            "name": "刷体力第二次",  
+            "entry": "刷体力开始",  
+            "default_check": true,  
+            "option": ["选择打什么关卡", "自定义扫荡次数上限"],  
+            "doc": "第二次体力刷取，消耗体力扫荡或自动战斗"  
+        },  
+        {  
+            "name": "刷蚀之隙",  
+            "entry": "刷蚀之隙开始",  
+            "default_check": true,  
+            "doc": "刷一次难度最低的第一章简单难度的蚀之隙已完成日常任务"  
+        },  
+        {  
+            "name": "天地阁加速",  
+            "entry": "天地阁加速开始",  
+            "default_check": true,  
+            "doc": "天地阁加速"  
+        },  
+        {  
+            "name": "幻境挑战",  
+            "entry": "幻境挑战开始",  
+            "default_check": true,  
+            "doc": "自动进行一次幻境挑战"  
+        },  
+        {  
+            "name": "每日免费召唤",  
+            "entry": "每日免费召唤开始",  
+            "default_check": true,  
+            "doc": "进行每日免费召唤一次"  
+        },  
+        {  
+            "name": "通关文牒奖励",  
+            "entry": "通关文牒奖励开始",  
+            "default_check": true,  
+            "doc": "自动领取通关文牒的奖励"  
+        },  
+        {  
+            "name": "领取历练奖励",  
+            "entry": "领取历练奖励开始",  
+            "default_check": true,  
+            "doc": "自动领取历练任务的每日奖励"  
+        }  
+    ],  
+    "option": {  
+        "选择打什么关卡": {  
+            "type": "select",  
+            "label": "选择关卡",  
+            "default": "灵脉光渊",  
+            "cases": [  
+                {  
+                    "name": "灵脉光渊",  
+                    "label": "灵脉光渊",  
+                    "option": ["开始灵脉光渊类型选择", "刷取关卡方式选择-灵脉光渊"],  
+                    "pipeline_override": {  
+                        "选择打什么关卡": {  
+                            "next": [  
+                                "灵脉光渊",  
+                                "[JumpBack]滑动屏幕进行关卡选择"  
+                            ]  
+                        }  
+                    }  
+                },  
+                {  
+                    "name": "创命之间",  
+                    "label": "创命之间",  
+                    "option": ["开始创命之间类型选择", "刷取关卡方式选择-灵脉光渊"],  
+                    "pipeline_override": {  
+                        "选择打什么关卡": {  
+                            "next": [  
+                                "创命之间",  
+                                "[JumpBack]滑动屏幕进行关卡选择"  
+                            ]  
+                        }  
+                    }  
+                },  
+                {  
+                    "name": "剑论九州",  
+                    "label": "剑论九州",  
+                    "option": ["刷取关卡方式选择-灵脉光渊"],  
+                    "pipeline_override": {  
+                        "选择打什么关卡": {  
+                            "next": [  
+                                "剑论九州",  
+                                "[JumpBack]滑动屏幕进行关卡选择"  
+                            ]  
+                        }  
+                    }  
+                },  
+                {  
+                    "name": "海捕今",  
+                    "label": "海捕今",  
+                    "option": ["刷取关卡方式选择-灵脉光渊"],  
+                    "pipeline_override": {  
+                        "选择打什么关卡": {  
+                            "next": [  
+                                "海捕今",  
+                                "[JumpBack]滑动屏幕进行关卡选择"  
+                            ]  
+                        }  
+                    }  
+                },  
+                {  
+                    "name": "幻海魂渊",  
+                    "label": "幻海魂渊",  
+                    "option": ["刷取关卡方式选择-灵脉光渊"],  
+                    "pipeline_override": {  
+                        "选择打什么关卡": {  
+                            "next": [  
+                                "幻海魂渊",  
+                                "[JumpBack]滑动屏幕进行关卡选择"  
+                            ]  
+                        }  
+                    }  
+                },  
+                {  
+                    "name": "魂海渊祭",  
+                    "label": "魂海渊祭",  
+                    "option": ["刷取关卡方式选择-灵脉光渊"],  
+                    "pipeline_override": {  
+                        "选择打什么关卡": {  
+                            "next": [  
+                                "魂海渊祭",  
+                                "[JumpBack]滑动屏幕进行关卡选择"  
+                            ]  
+                        }  
+                    }  
+                }  
+            ]  
+        },  
+        "开始灵脉光渊类型选择": {  
+            "type": "select",  
+            "label": "灵脉光渊 - 选择属性",  
+            "default": "炎之灵脉",  
+            "cases": [  
+                { "name": "炎之灵脉", "label": "炎之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["炎之灵脉"] } } },  
+                { "name": "冰之灵脉", "label": "冰之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["冰之灵脉"] } } },  
+                { "name": "雷之灵脉", "label": "雷之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["雷之灵脉"] } } },  
+                { "name": "光之灵脉", "label": "光之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["光之灵脉"] } } },  
+                { "name": "暗之灵脉", "label": "暗之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["暗之灵脉"] } } },  
+                { "name": "幽之灵脉", "label": "幽之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["幽之灵脉"] } } }  
+            ]  
+        },  
+        "开始创命之间类型选择": {  
+            "type": "select",  
+            "label": "创命之间 - 选择属性",  
+            "default": "火属相",  
+            "cases": [  
+                { "name": "火属相", "label": "火属相", "pipeline_override": { "开始创命之间类型选择": { "next": ["火属相"] } } },  
+                { "name": "冰属相", "label": "冰属相", "pipeline_override": { "开始创命之间类型选择": { "next": ["冰属相"] } } },  
+                { "name": "雷属相", "label": "雷属相", "pipeline_override": { "开始创命之间类型选择": { "next": ["雷属相"] } } },  
+                { "name": "暗属相", "label": "暗属相", "pipeline_override": { "开始创命之间类型选择": { "next": ["暗属相"] } } }  
+            ]  
+        },  
+        "刷取关卡方式选择-灵脉光渊": {  
+            "type": "select",  
+            "label": "选择刷取方式",  
+            "default": "扫荡",  
+            "cases": [  
+                { "name": "扫荡", "label": "扫荡", "pipeline_override": { "刷取关卡方式选择-灵脉光渊": { "next": ["选择扫荡方式-灵脉光渊"] } } },  
+                { "name": "正常对战", "label": "正常对战", "pipeline_override": { "刷取关卡方式选择-灵脉光渊": { "next": ["选择正常对战方式-灵脉光渊"] } } }  
+            ]  
+        },  
+        "自定义扫荡次数上限": {  
+            "type": "input",  
+            "label": "扫荡次数上限",  
+            "description": "设置扫荡次数上限（默认4）",  
+            "inputs": [  
+                {  
+                    "name": "扫荡上限次数",  
+                    "label": "$扫荡上限次数",  
+                    "default": "4",  
+                    "pipeline_type": "string",  
+                    "verify": "^\\d+$"  
+                }  
+            ],  
+            "pipeline_override": {  
+                "当前扫荡次数是否为上限": {  
+                    "recognition": {  
+                        "type": "OCR",  
+                        "param": {  
+                            "expected": ["{扫荡上限次数}"]  
+                        }  
+                    }  
+                }  
+            }  
+        }  
+    }  
 }

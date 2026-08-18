@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786878636213,
+            "lastSyncTime": 1787013910005,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -6767,
-                "y": 791,
-                "zoom": 0.65
+                "x": -7506,
+                "y": 1154,
+                "zoom": 0.86
             },
             "filename": "刷体力",
             "version": "v1.7.6"
@@ -36,31 +36,6 @@
             "position": {
                 "x": 11919,
                 "y": 431
-            }
-        }
-    },
-    "三途川": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    167,
-                    168,
-                    906,
-                    304
-                ],
-                "expected": [
-                    "三途"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 8668,
-                "y": 558
             }
         }
     },
@@ -271,8 +246,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8663,
-                "y": 774
+                "x": 8606,
+                "y": 618
             }
         }
     },
@@ -461,8 +436,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8671,
-                "y": 968
+                "x": 8633,
+                "y": 870
             }
         }
     },
@@ -563,7 +538,8 @@
                     633
                 ],
                 "expected": [
-                    "炎"
+                    "炎",
+                    "艾"
                 ]
             }
         },
@@ -575,8 +551,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9317,
-                "y": -1236
+                "x": 9290,
+                "y": -1312
             }
         }
     },
@@ -602,29 +578,22 @@
     },
     "进入异闻界面": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1164,
-                    69,
-                    97,
-                    566
+                    1184,
+                    77,
+                    83,
+                    461
                 ],
-                "expected": [
-                    "异闻"
+                "template": [
+                    "异闻图标.png"
                 ]
             }
         },
+        "pre_wait_freezes": 1000,
         "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    -33,
-                    0,
-                    0
-                ]
-            }
+            "type": "Click"
         },
         "next": [
             "进入试炼挑战界面"
@@ -734,7 +703,6 @@
         "next": [
             "灵脉光渊",
             "创命之间",
-            "三途川",
             "剑论九州",
             "海捕今",
             "幻海魂渊",

@@ -3,12 +3,12 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786838627222,
+            "lastSyncTime": 1787015441171,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\领取历练奖励.json",
             "savedViewport": {
-                "x": -1713,
-                "y": 69,
+                "x": -1640,
+                "y": 64,
                 "zoom": 0.65
             },
             "filename": "领取历练奖励",
@@ -23,7 +23,7 @@
             }
         }
     },
-    "历练界面是否有待领取奖励": {
+    "历练界面是否有待领取奖励-领取历练奖励": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -54,7 +54,7 @@
             }
         },
         "next": [
-            "开始确认每日任务是否有奖励"
+            "开始确认每日任务是否有奖励-领取历练奖励"
         ],
         "$__mpe_code": {
             "position": {
@@ -63,7 +63,20 @@
             }
         }
     },
-    "有没有一键领取": {
+    "开始确认每日任务是否有奖励-领取历练奖励": {
+        "post_delay": 3000,
+        "next": [
+            "每日任务是否有待领取奖励-领取历练奖励",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3213,
+                "y": 179
+            }
+        }
+    },
+    "有没有一键领取-领取历练奖励": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -86,7 +99,7 @@
             }
         }
     },
-    "每日任务是否有待领取奖励": {
+    "每日任务是否有待领取奖励-领取历练奖励": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -116,7 +129,7 @@
             }
         },
         "next": [
-            "有没有一键领取"
+            "有没有一键领取-领取历练奖励"
         ],
         "$__mpe_code": {
             "position": {
@@ -127,8 +140,8 @@
     },
     "领取历练奖励开始": {
         "next": [
-            "历练界面是否有待领取奖励",
-            "领取历练奖励结束"
+            "历练界面是否有待领取奖励-领取历练奖励",
+            "领取历练奖励结束-领取历练奖励"
         ],
         "$__mpe_code": {
             "position": {
@@ -137,24 +150,11 @@
             }
         }
     },
-    "领取历练奖励结束": {
+    "领取历练奖励结束-领取历练奖励": {
         "$__mpe_code": {
             "position": {
                 "x": 3066,
                 "y": 672
-            }
-        }
-    },
-    "开始确认每日任务是否有奖励": {
-        "post_delay": 3000,
-        "next": [
-            "每日任务是否有待领取奖励",
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3213,
-                "y": 179
             }
         }
     }

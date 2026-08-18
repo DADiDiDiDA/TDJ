@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786878319823,
+            "lastSyncTime": 1787014366709,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\幻境挑战.json",
             "savedViewport": {
-                "x": -5962,
-                "y": -182,
-                "zoom": 0.86
+                "x": -4009,
+                "y": -16,
+                "zoom": 0.57
             },
             "filename": "幻境挑战",
             "version": "v1.7.6"
@@ -121,6 +121,19 @@
             }
         }
     },
+    "是否进入幻境菜单判断": {
+        "next": [
+            "检查剩余挑战次数",
+            "选择第一位对手-幻境挑战",
+            "进入幻境菜单-幻境挑战_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7751,
+                "y": 283
+            }
+        }
+    },
     "检查剩余挑战次数": {
         "recognition": {
             "type": "OCR",
@@ -141,8 +154,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8155,
-                "y": 247
+                "x": 8140,
+                "y": 177
             }
         }
     },
@@ -212,6 +225,43 @@
     },
     "进入幻境菜单-幻境挑战": {
         "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1181,
+                    97,
+                    91,
+                    450
+                ],
+                "template": [
+                    "幻境图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    1,
+                    -32,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2500,
+        "next": [
+            "是否进入幻境菜单判断"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7430,
+                "y": 186
+            }
+        }
+    },
+    "进入幻境菜单-幻境挑战_第二次": {
+        "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
@@ -241,12 +291,13 @@
         "post_delay": 2500,
         "next": [
             "检查剩余挑战次数",
-            "选择第一位对手-幻境挑战"
+            "选择第一位对手-幻境挑战",
+            "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7724,
-                "y": 313
+                "x": 7779,
+                "y": 822
             }
         }
     },
@@ -283,7 +334,7 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8066,
+                "x": 8096,
                 "y": 499
             }
         }
