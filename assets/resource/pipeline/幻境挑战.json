@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787142310289,
+            "lastSyncTime": 1787185836578,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\幻境挑战.json",
             "savedViewport": {
-                "x": -5726,
-                "y": -355,
-                "zoom": 0.65
+                "x": -11590,
+                "y": 500,
+                "zoom": 1.5
             },
             "filename": "幻境挑战",
             "version": "v1.7.6"
@@ -19,7 +19,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 10230,
-                "y": 1124
+                "y": 1180
             }
         }
     },
@@ -53,7 +53,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 9722,
-                "y": 730
+                "y": 766
             }
         }
     },
@@ -66,7 +66,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 8913,
-                "y": 499
+                "y": 523
             }
         }
     },
@@ -79,7 +79,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 9383,
-                "y": 1115
+                "y": 1170
             }
         }
     },
@@ -91,7 +91,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 7100,
-                "y": 532
+                "y": 558
             }
         }
     },
@@ -114,7 +114,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 8342,
-                "y": 494
+                "y": 518
             }
         }
     },
@@ -139,7 +139,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 9294,
-                "y": 298
+                "y": 312
             }
         }
     },
@@ -164,7 +164,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 7471,
-                "y": 556
+                "y": 583
             }
         }
     },
@@ -172,12 +172,14 @@
         "next": [
             "检查剩余挑战次数",
             "选择第一位对手-幻境挑战",
-            "进入幻境菜单-幻境挑战_第二次"
+            "进入幻境菜单-幻境挑战_第二次",
+            "[JumpBack]竞技场特殊情况处理",
+            "[JumpBack]幻境位阶提升"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 7751,
-                "y": 283
+                "y": 296
             }
         }
     },
@@ -202,7 +204,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 8140,
-                "y": 177
+                "y": 185
             }
         }
     },
@@ -230,7 +232,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 8614,
-                "y": 487
+                "y": 511
             }
         }
     },
@@ -266,7 +268,40 @@
         "$__mpe_code": {
             "position": {
                 "x": 9250,
-                "y": 560
+                "y": 587
+            }
+        }
+    },
+    "竞技场特殊情况处理": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    524,
+                    91,
+                    241,
+                    52
+                ],
+                "template": [
+                    "竞技场战斗结果处理.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    11,
+                    -83,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8105,
+                "y": -113
             }
         }
     },
@@ -303,7 +338,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 7430,
-                "y": 186
+                "y": 195
             }
         }
     },
@@ -344,7 +379,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 7779,
-                "y": 822
+                "y": 862
             }
         }
     },
@@ -382,7 +417,32 @@
         "$__mpe_code": {
             "position": {
                 "x": 8096,
-                "y": 499
+                "y": 523
+            }
+        }
+    },
+    "幻境位阶提升": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    495,
+                    638,
+                    277,
+                    68
+                ],
+                "expected": [
+                    "点击屏幕"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8054,
+                "y": -291
             }
         }
     }
