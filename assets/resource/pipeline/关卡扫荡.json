@@ -3,10 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787141722120,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\关卡扫荡.json",
             "savedViewport": {
-                "x": -11113,
-                "y": 1046,
-                "zoom": 0.87
+                "x": -13763,
+                "y": 1343,
+                "zoom": 1.14
             },
             "filename": "关卡扫荡",
             "version": "v1.7.6"
@@ -17,6 +20,42 @@
             "position": {
                 "x": 14403,
                 "y": -1374
+            }
+        }
+    },
+    "先判断一次扫荡所需体力是否为红色": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    883,
+                    597,
+                    90,
+                    32
+                ],
+                "lower": [
+                    [
+                        255,
+                        0,
+                        0
+                    ]
+                ],
+                "upper": [
+                    [
+                        255,
+                        59,
+                        59
+                    ]
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12058,
+                "y": -1161
             }
         }
     },
@@ -108,7 +147,8 @@
                     50
                 ],
                 "template": [
-                    "扫荡次数增加图标.png"
+                    "扫荡次数增加图标.png",
+                    "扫荡次数增加图标2.png"
                 ],
                 "threshold": [
                     0.4
@@ -123,8 +163,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12722,
-                "y": -1104
+                "x": 12708,
+                "y": -1117
             }
         }
     },
@@ -166,6 +206,17 @@
             }
         }
     },
+    "有可用体力-开始扫荡": {
+        "next": [
+            "增加关卡扫荡次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12321,
+                "y": -780
+            }
+        }
+    },
     "确认关卡扫荡开始": {
         "recognition": {
             "type": "OCR",
@@ -191,53 +242,6 @@
             "position": {
                 "x": 14139,
                 "y": -1028
-            }
-        }
-    },
-    "先判断一次扫荡所需体力是否为红色": {
-        "recognition": {
-            "type": "ColorMatch",
-            "param": {
-                "roi": [
-                    883,
-                    597,
-                    90,
-                    32
-                ],
-                "lower": [
-                    [
-                        255,
-                        0,
-                        0
-                    ]
-                ],
-                "upper": [
-                    [
-                        255,
-                        59,
-                        59
-                    ]
-                ]
-            }
-        },
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12058,
-                "y": -1161
-            }
-        }
-    },
-    "有可用体力-开始扫荡": {
-        "next": [
-            "增加关卡扫荡次数"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12321,
-                "y": -780
             }
         }
     }

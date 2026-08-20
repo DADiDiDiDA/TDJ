@@ -3,13 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787015429320,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\每日免费召唤.json",
             "savedViewport": {
-                "x": -12575,
-                "y": 1215,
-                "zoom": 0.86
+                "x": -9260,
+                "y": 975,
+                "zoom": 0.66
             },
             "filename": "每日免费召唤",
             "version": "v1.7.6"
@@ -27,8 +24,14 @@
         "recognition": {
             "type": "OCR",
             "param": {
+                "roi": [
+                    294,
+                    603,
+                    230,
+                    86
+                ],
                 "expected": [
-                    "免费召唤"
+                    "本次免费"
                 ]
             }
         },
@@ -73,6 +76,9 @@
                 ]
             }
         },
+        "action": {
+            "type": "Click"
+        },
         "$__mpe_code": {
             "position": {
                 "x": 15999,
@@ -97,9 +103,6 @@
                         45,
                         31
                     ]
-                ],
-                "duration": [
-                    1000
                 ]
             }
         },

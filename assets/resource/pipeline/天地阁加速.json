@@ -3,13 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787025638025,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\天地阁加速.json",
             "savedViewport": {
-                "x": -10242,
-                "y": -571,
-                "zoom": 1.5
+                "x": -4521,
+                "y": -11,
+                "zoom": 0.66
             },
             "filename": "天地阁加速",
             "version": "v1.7.6"
@@ -46,7 +43,8 @@
             "type": "Click"
         },
         "next": [
-            "选择动态界面"
+            "选择动态界面",
+            "[JumpBack]是不是工会活动弹出"
         ],
         "$__mpe_code": {
             "position": {
@@ -116,6 +114,31 @@
             "position": {
                 "x": 8599,
                 "y": 472
+            }
+        }
+    },
+    "是不是工会活动弹出": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    511,
+                    643,
+                    267,
+                    63
+                ],
+                "expected": [
+                    "关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7976,
+                "y": 713
             }
         }
     }

@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787014119535,
+            "lastSyncTime": 1787098486750,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -612,
-                "y": -839,
-                "zoom": 0.86
+                "x": -228,
+                "y": -411,
+                "zoom": 0.49
             },
             "filename": "返回主界面",
             "version": "v1.7.6"
@@ -73,8 +73,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1524,
-                "y": 1267
+                "x": 1512,
+                "y": 1302
             }
         }
     },
@@ -98,8 +98,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1529,
-                "y": 256
+                "x": 1474,
+                "y": 143
             }
         }
     },
@@ -118,8 +118,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1484,
-                "y": 45
+                "x": 1459,
+                "y": -42
             }
         }
     },
@@ -143,8 +143,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1831,
-                "y": -219
+                "x": 1866,
+                "y": -262
             }
         }
     },
@@ -168,8 +168,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1545,
-                "y": 514
+                "x": 1499,
+                "y": 398
             }
         }
     },
@@ -193,8 +193,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1573,
-                "y": 691
+                "x": 1559,
+                "y": 673
             }
         }
     },
@@ -210,8 +210,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1491,
-                "y": 1458
+                "x": 1494,
+                "y": 1740
             }
         }
     },
@@ -278,6 +278,7 @@
             "[JumpBack]界面下方处理继续",
             "[JumpBack]等级提升",
             "[JumpBack]关卡失败退出",
+            "[JumpBack]需要下载数据",
             "[JumpBack]按Esc返回"
         ],
         "$__mpe_code": {
@@ -290,8 +291,8 @@
     "返回主界面结束": {
         "$__mpe_code": {
             "position": {
-                "x": 1845,
-                "y": 19
+                "x": 1909,
+                "y": -50
             }
         }
     },
@@ -315,8 +316,33 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1478,
-                "y": -220
+                "x": 1458,
+                "y": -287
+            }
+        }
+    },
+    "需要下载数据": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    703,
+                    511,
+                    126,
+                    44
+                ],
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1521,
+                "y": 1526
             }
         }
     }

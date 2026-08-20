@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787014366709,
+            "lastSyncTime": 1787142310289,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\幻境挑战.json",
             "savedViewport": {
-                "x": -4009,
-                "y": -16,
-                "zoom": 0.57
+                "x": -5726,
+                "y": -355,
+                "zoom": 0.65
             },
             "filename": "幻境挑战",
             "version": "v1.7.6"
@@ -18,8 +18,42 @@
     "$__mpe_external_返回主界面开始_幻境挑战": {
         "$__mpe_code": {
             "position": {
-                "x": 9717,
-                "y": 641
+                "x": 10230,
+                "y": 1124
+            }
+        }
+    },
+    "寻找竞技场可领取奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    649,
+                    624,
+                    353,
+                    84
+                ],
+                "template": [
+                    "竞技场可领取奖励图标.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.65
+                ],
+                "order_by": "Horizontal",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9722,
+                "y": 730
             }
         }
     },
@@ -33,6 +67,19 @@
             "position": {
                 "x": 8913,
                 "y": 499
+            }
+        }
+    },
+    "幻境战斗结束-开始寻找待领取奖励": {
+        "post_delay": 1500,
+        "next": [
+            "寻找竞技场可领取奖励",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9383,
+                "y": 1115
             }
         }
     },
@@ -150,7 +197,7 @@
             }
         },
         "next": [
-            "返回主界面开始"
+            "幻境战斗结束-开始寻找待领取奖励"
         ],
         "$__mpe_code": {
             "position": {
@@ -214,12 +261,12 @@
             }
         },
         "next": [
-            "返回主界面开始"
+            "是否进入幻境菜单判断"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9303,
-                "y": 596
+                "x": 9250,
+                "y": 560
             }
         }
     },
@@ -292,7 +339,7 @@
         "next": [
             "检查剩余挑战次数",
             "选择第一位对手-幻境挑战",
-            "返回主界面开始"
+            "幻境战斗结束-开始寻找待领取奖励"
         ],
         "$__mpe_code": {
             "position": {

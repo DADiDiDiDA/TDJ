@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787053027209,
+            "lastSyncTime": 1787143033317,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\山河志派遣.json",
             "savedViewport": {
-                "x": -2978,
-                "y": 137,
-                "zoom": 0.49
+                "x": -4985,
+                "y": -115,
+                "zoom": 0.86
             },
             "filename": "山河志派遣",
             "version": "v1.7.6"
@@ -46,10 +46,8 @@
                 ],
                 "template": [
                     "未激活派遣图标.png",
-                    "加入队列图标.png"
-                ],
-                "threshold": [
-                    0.9
+                    "加入队列图标.png",
+                    "加入队列图标2.png"
                 ]
             }
         },
@@ -61,8 +59,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6602,
-                "y": 242
+                "x": 6568,
+                "y": 262
             }
         }
     },
@@ -101,8 +99,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7133,
-                "y": -182
+                "x": 7149,
+                "y": -215
             }
         }
     },
@@ -250,9 +248,6 @@
                 "template": [
                     "已激活派遣图标.png",
                     "已激活的加入队列图标.png"
-                ],
-                "threshold": [
-                    0.9
                 ]
             }
         },
@@ -371,7 +366,8 @@
             "type": "Click"
         },
         "next": [
-            "接受委托开始"
+            "接受委托开始",
+            "[JumpBack]开始领取山河志奖励"
         ],
         "$__mpe_code": {
             "position": {

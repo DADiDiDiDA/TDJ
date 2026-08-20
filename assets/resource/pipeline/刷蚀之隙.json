@@ -3,10 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787141811686,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\刷蚀之隙.json",
             "savedViewport": {
-                "x": -10929,
-                "y": 1144,
-                "zoom": 0.66
+                "x": -9820,
+                "y": 917,
+                "zoom": 0.65
             },
             "filename": "刷蚀之隙",
             "version": "v1.7.6"
@@ -50,7 +53,8 @@
     },
     "刷蚀之隙开始": {
         "next": [
-            "进入启程界面-刷蚀之隙"
+            "进入蚀之隙界面-刷蚀之隙",
+            "[JumpBack]进入启程界面-刷蚀之隙"
         ],
         "$__mpe_code": {
             "position": {
@@ -202,13 +206,10 @@
         "action": {
             "type": "Click"
         },
-        "next": [
-            "进入蚀之隙界面-刷蚀之隙"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 15477,
-                "y": -1089
+                "x": 15544,
+                "y": -775
             }
         }
     },
