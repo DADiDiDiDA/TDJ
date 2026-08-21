@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787143033317,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\山河志派遣.json",
             "savedViewport": {
-                "x": -4985,
-                "y": -115,
-                "zoom": 0.86
+                "x": -2851,
+                "y": -98,
+                "zoom": 0.66
             },
             "filename": "山河志派遣",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_返回主界面开始_山河志派遣": {
@@ -106,12 +103,13 @@
     },
     "山河志派遣开始": {
         "next": [
-            "进入山河志界面"
+            "进入山河志界面",
+            "[JumpBack]返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4374,
-                "y": 410
+                "x": 4326,
+                "y": 762
             }
         }
     },
@@ -150,8 +148,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5214,
-                "y": 169
+                "x": 5504,
+                "y": 105
             }
         }
     },
@@ -184,7 +182,7 @@
             }
         }
     },
-    "新建节点2": {
+    "是否有可领取奖励-山河志": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -205,7 +203,7 @@
         "post_delay": 1500,
         "$__mpe_code": {
             "position": {
-                "x": 5137,
+                "x": 5279,
                 "y": -200
             }
         }
@@ -305,33 +303,25 @@
     },
     "进入山河志界面": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    319,
-                    648,
-                    772,
-                    65
+                    306,
+                    585,
+                    807,
+                    123
                 ],
-                "expected": [
-                    "山河志"
+                "template": [
+                    "山河志图标.png"
                 ]
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    -23,
-                    0,
-                    0
-                ]
-            }
+            "type": "Click"
         },
         "post_delay": 2500,
         "next": [
-            "[JumpBack]新建节点2",
+            "[JumpBack]是否有可领取奖励-山河志",
             "[JumpBack]开始领取山河志奖励",
             "选择任务地区"
         ],
@@ -367,7 +357,8 @@
         },
         "next": [
             "接受委托开始",
-            "[JumpBack]开始领取山河志奖励"
+            "[JumpBack]开始领取山河志奖励",
+            "[JumpBack]选择任务地区_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -396,6 +387,36 @@
             "position": {
                 "x": 7205,
                 "y": 236
+            }
+        }
+    },
+    "选择任务地区_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    115,
+                    352,
+                    903,
+                    76
+                ],
+                "expected": [
+                    "中立",
+                    "冷淡",
+                    "友好",
+                    "亲密",
+                    "尊敬",
+                    "显赫"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5559,
+                "y": 713
             }
         }
     }

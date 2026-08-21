@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787013910005,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -7506,
-                "y": 1154,
-                "zoom": 0.86
+                "x": -7642,
+                "y": 981,
+                "zoom": 0.76
             },
             "filename": "刷体力",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_关卡内作战开始_刷体力": {
@@ -686,15 +683,16 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 0,
+        "post_delay": 1000,
         "next": [
             "体力不足任务结束",
-            "开始选择扫荡次数"
+            "开始选择扫荡次数",
+            "[JumpBack]选择可扫荡的关卡-灵脉光渊_副本1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10836,
-                "y": -878
+                "x": 10792,
+                "y": -891
             }
         }
     },
@@ -818,6 +816,36 @@
             "position": {
                 "x": 8632,
                 "y": 1350
+            }
+        }
+    },
+    "选择可扫荡的关卡-灵脉光渊_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    832,
+                    66,
+                    112,
+                    650
+                ],
+                "template": [
+                    "扫荡按钮.png",
+                    "扫荡按钮2.png"
+                ],
+                "green_mask": true,
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 11077,
+                "y": -1278
             }
         }
     }
