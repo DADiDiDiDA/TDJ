@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787015441171,
+            "lastSyncTime": 1787321992069,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\领取历练奖励.json",
             "savedViewport": {
-                "x": -1640,
-                "y": 64,
-                "zoom": 0.65
+                "x": -1839,
+                "y": 29,
+                "zoom": 0.66
             },
             "filename": "领取历练奖励",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_返回主界面开始_领取历练奖励": {
@@ -58,8 +58,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2966,
-                "y": 245
+                "x": 2846,
+                "y": 236
             }
         }
     },
@@ -133,8 +133,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3584,
-                "y": 29
+                "x": 3589,
+                "y": -20
             }
         }
     },
@@ -145,8 +145,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2611,
-                "y": 441
+                "x": 2475,
+                "y": 471
             }
         }
     },

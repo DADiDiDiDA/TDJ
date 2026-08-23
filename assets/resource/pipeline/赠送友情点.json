@@ -3,16 +3,24 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786838621807,
+            "lastSyncTime": 1787321791704,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\赠送友情点.json",
             "savedViewport": {
-                "x": -4119,
-                "y": -128,
-                "zoom": 0.99
+                "x": -1779,
+                "y": 59,
+                "zoom": 0.57
             },
             "filename": "赠送友情点",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
+        }
+    },
+    "$__mpe_external_返回主界面开始_赠送友情点": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4829,
+                "y": 399
+            }
         }
     },
     "赠送友情点开始": {
@@ -45,7 +53,8 @@
             "type": "Click"
         },
         "next": [
-            "选择所有好友类别-好友"
+            "选择所有好友类别-好友",
+            "[JumpBack]进入好友界面_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -138,11 +147,28 @@
             }
         }
     },
-    "$__mpe_external_返回主界面开始_赠送友情点": {
+    "进入好友界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    12,
+                    130,
+                    74,
+                    426
+                ],
+                "template": [
+                    "好友图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "$__mpe_code": {
             "position": {
-                "x": 4829,
-                "y": 399
+                "x": 3677,
+                "y": 194
             }
         }
     }

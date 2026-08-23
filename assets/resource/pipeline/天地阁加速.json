@@ -3,81 +3,23 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787321782553,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\天地阁加速.json",
             "savedViewport": {
-                "x": -4521,
-                "y": -11,
-                "zoom": 0.66
+                "x": -4100,
+                "y": -44,
+                "zoom": 0.57
             },
             "filename": "天地阁加速",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
-    "天地阁加速开始": {
-        "next": [
-            "进入天地阁"
-        ],
+    "$__mpe_external_返回主界面开始_天地阁加速": {
         "$__mpe_code": {
             "position": {
-                "x": 7228,
-                "y": 507
-            }
-        }
-    },
-    "进入天地阁": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    284,
-                    591,
-                    830,
-                    100
-                ],
-                "template": [
-                    "天地阁图标.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "选择动态界面",
-            "[JumpBack]是不是工会活动弹出"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 7640,
-                "y": 413
-            }
-        }
-    },
-    "选择动态界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1174,
-                    381,
-                    63,
-                    47
-                ],
-                "expected": [
-                    "动态"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "一键加速盟友"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 7976,
-                "y": 388
+                "x": 8700,
+                "y": 633
             }
         }
     },
@@ -109,11 +51,14 @@
             }
         }
     },
-    "$__mpe_external_返回主界面开始_天地阁加速": {
+    "天地阁加速开始": {
+        "next": [
+            "进入天地阁"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 8599,
-                "y": 472
+                "x": 7228,
+                "y": 507
             }
         }
     },
@@ -137,8 +82,120 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 7976,
-                "y": 713
+                "x": 8009,
+                "y": 621
+            }
+        }
+    },
+    "进入天地阁": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    284,
+                    591,
+                    830,
+                    100
+                ],
+                "template": [
+                    "天地阁图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择动态界面",
+            "[JumpBack]是不是工会活动弹出",
+            "[JumpBack]进入天地阁_第二次",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7608,
+                "y": 430
+            }
+        }
+    },
+    "选择动态界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1174,
+                    381,
+                    63,
+                    47
+                ],
+                "expected": [
+                    "动态"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "一键加速盟友",
+            "[JumpBack]选择动态界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8008,
+                "y": 330
+            }
+        }
+    },
+    "进入天地阁_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    284,
+                    591,
+                    830,
+                    100
+                ],
+                "template": [
+                    "天地阁图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8000,
+                "y": 850
+            }
+        }
+    },
+    "选择动态界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1174,
+                    381,
+                    63,
+                    47
+                ],
+                "expected": [
+                    "动态"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8298,
+                "y": 124
             }
         }
     }

@@ -3,23 +3,23 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786878165062,
+            "lastSyncTime": 1787321990547,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\通关文牒奖励.json",
             "savedViewport": {
-                "x": -3774,
-                "y": -222,
-                "zoom": 0.86
+                "x": -1943,
+                "y": -5,
+                "zoom": 0.44
             },
             "filename": "通关文牒奖励",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_返回主界面开始_通关文牒奖励": {
         "$__mpe_code": {
             "position": {
-                "x": 6901,
-                "y": 560
+                "x": 6436,
+                "y": 1039
             }
         }
     },
@@ -57,8 +57,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5836,
-                "y": 214
+                "x": 5754,
+                "y": 93
             }
         }
     },
@@ -84,6 +84,7 @@
         "post_delay": 3000,
         "next": [
             "是否有待领取任务-文牒",
+            "[JumpBack]查看文牒位置_第二次",
             "返回主界面开始"
         ],
         "$__mpe_code": {
@@ -120,7 +121,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 6380,
-                "y": 240
+                "y": 51
             }
         }
     },
@@ -132,6 +133,33 @@
             "position": {
                 "x": 4940,
                 "y": 530
+            }
+        }
+    },
+    "查看文牒位置_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    149,
+                    59,
+                    355,
+                    161
+                ],
+                "template": [
+                    "通关文牒图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5784,
+                "y": 418
             }
         }
     }

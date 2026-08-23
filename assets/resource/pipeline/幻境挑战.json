@@ -3,23 +3,23 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787185836578,
+            "lastSyncTime": 1787449161134,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\幻境挑战.json",
             "savedViewport": {
-                "x": -11590,
-                "y": 500,
-                "zoom": 1.5
+                "x": -3794,
+                "y": -25,
+                "zoom": 0.49
             },
             "filename": "幻境挑战",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_返回主界面开始_幻境挑战": {
         "$__mpe_code": {
             "position": {
-                "x": 10230,
-                "y": 1180
+                "x": 10294,
+                "y": 496
             }
         }
     },
@@ -52,8 +52,33 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9722,
-                "y": 766
+                "x": 9931,
+                "y": -33
+            }
+        }
+    },
+    "幻境位阶提升": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    495,
+                    638,
+                    277,
+                    68
+                ],
+                "expected": [
+                    "点击屏幕"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8075,
+                "y": -331
             }
         }
     },
@@ -61,7 +86,8 @@
         "timeout": -1,
         "next": [
             "[JumpBack]开始跳过战斗-幻境挑战",
-            "确认战斗结果-幻境挑战"
+            "确认战斗结果-幻境挑战",
+            "[JumpBack]位阶提升点击继续"
         ],
         "$__mpe_code": {
             "position": {
@@ -78,8 +104,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9383,
-                "y": 1170
+                "x": 9218,
+                "y": 35
             }
         }
     },
@@ -90,8 +116,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7100,
-                "y": 558
+                "x": 6581,
+                "y": 497
             }
         }
     },
@@ -109,12 +135,33 @@
         },
         "post_delay": 3500,
         "next": [
-            "确认出战-幻境挑战"
+            "确认出战-幻境挑战",
+            "[JumpBack]开始自动战斗-幻境挑战_第二次"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 8342,
                 "y": 518
+            }
+        }
+    },
+    "开始自动战斗-幻境挑战_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "自动战斗图标-幻境挑战.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3500,
+        "$__mpe_code": {
+            "position": {
+                "x": 8639,
+                "y": 867
             }
         }
     },
@@ -163,7 +210,7 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 7471,
+                "x": 6996,
                 "y": 583
             }
         }
@@ -171,15 +218,15 @@
     "是否进入幻境菜单判断": {
         "next": [
             "检查剩余挑战次数",
-            "选择第一位对手-幻境挑战",
-            "进入幻境菜单-幻境挑战_第二次",
+            "[JumpBack]选择第一位对手-幻境挑战",
             "[JumpBack]竞技场特殊情况处理",
-            "[JumpBack]幻境位阶提升"
+            "[JumpBack]幻境位阶提升",
+            "[JumpBack]进入幻境菜单-幻境挑战_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7751,
-                "y": 296
+                "x": 7317,
+                "y": 254
             }
         }
     },
@@ -262,13 +309,10 @@
                 ]
             }
         },
-        "next": [
-            "是否进入幻境菜单判断"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 9250,
-                "y": 587
+                "x": 9317,
+                "y": 569
             }
         }
     },
@@ -337,25 +381,23 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7430,
-                "y": 195
+                "x": 7019,
+                "y": 174
             }
         }
     },
     "进入幻境菜单-幻境挑战_第二次": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1165,
-                    96,
-                    92,
-                    403
+                    1181,
+                    97,
+                    91,
+                    450
                 ],
-                "expected": [
-                    "幻境",
-                    "幻镜",
-                    "镜"
+                "template": [
+                    "幻境图标.png"
                 ]
             }
         },
@@ -371,15 +413,10 @@
             }
         },
         "post_delay": 2500,
-        "next": [
-            "检查剩余挑战次数",
-            "选择第一位对手-幻境挑战",
-            "幻境战斗结束-开始寻找待领取奖励"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 7779,
-                "y": 862
+                "x": 7681,
+                "y": 529
             }
         }
     },
@@ -412,27 +449,63 @@
         },
         "post_delay": 2000,
         "next": [
-            "开始自动战斗-幻境挑战"
+            "开始自动战斗-幻境挑战",
+            "[JumpBack]选择第一位对手-幻境挑战_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8096,
-                "y": 523
+                "x": 7978,
+                "y": 386
             }
         }
     },
-    "幻境位阶提升": {
+    "选择第一位对手-幻境挑战_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    437,
+                    231,
+                    163,
+                    133
+                ],
+                "template": [
+                    "幻境对手选项.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -66,
+                    34,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 8355,
+                "y": 837
+            }
+        }
+    },
+    "位阶提升点击继续": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    495,
-                    638,
-                    277,
-                    68
+                    530,
+                    635,
+                    241,
+                    83
                 ],
                 "expected": [
-                    "点击屏幕"
+                    "继续"
                 ]
             }
         },
@@ -441,8 +514,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8054,
-                "y": -291
+                "x": 9243,
+                "y": 841
             }
         }
     }

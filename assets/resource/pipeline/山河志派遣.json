@@ -3,10 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787321786205,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\山河志派遣.json",
             "savedViewport": {
-                "x": -2851,
-                "y": -98,
-                "zoom": 0.66
+                "x": -3534,
+                "y": -346,
+                "zoom": 0.57
             },
             "filename": "山河志派遣",
             "version": "v1.8.0"
@@ -203,8 +206,8 @@
         "post_delay": 1500,
         "$__mpe_code": {
             "position": {
-                "x": 5279,
-                "y": -200
+                "x": 5265,
+                "y": -162
             }
         }
     },
@@ -228,8 +231,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6713,
-                "y": 903
+                "x": 6666,
+                "y": 808
             }
         }
     },
@@ -323,11 +326,12 @@
         "next": [
             "[JumpBack]是否有可领取奖励-山河志",
             "[JumpBack]开始领取山河志奖励",
-            "选择任务地区"
+            "选择任务地区",
+            "[JumpBack]进入山河志界面_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4789,
+                "x": 4751,
                 "y": 361
             }
         }
@@ -367,29 +371,6 @@
             }
         }
     },
-    "选择第一位角色": {
-        "max_hit": 2,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    77,
-                    127,
-                    29,
-                    24
-                ]
-            }
-        },
-        "next": [
-            "开始检查是否满足派遣要求"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 7205,
-                "y": 236
-            }
-        }
-    },
     "选择任务地区_第二次": {
         "recognition": {
             "type": "OCR",
@@ -417,6 +398,55 @@
             "position": {
                 "x": 5559,
                 "y": 713
+            }
+        }
+    },
+    "选择第一位角色": {
+        "max_hit": 2,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    77,
+                    127,
+                    29,
+                    24
+                ]
+            }
+        },
+        "next": [
+            "开始检查是否满足派遣要求"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7205,
+                "y": 236
+            }
+        }
+    },
+    "进入山河志界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    306,
+                    585,
+                    807,
+                    123
+                ],
+                "template": [
+                    "山河志图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2500,
+        "$__mpe_code": {
+            "position": {
+                "x": 5062,
+                "y": 705
             }
         }
     }

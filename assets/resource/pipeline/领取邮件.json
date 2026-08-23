@@ -4,50 +4,19 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -7195,
-                "y": -224,
-                "zoom": 0.75
+                "x": -10975,
+                "y": -442,
+                "zoom": 1.15
             },
             "filename": "领取邮件",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
-    "领取邮件开始": {
-        "next": [
-            "进入邮件界面"
-        ],
+    "$__mpe_external_返回主界面开始_领取邮件": {
         "$__mpe_code": {
             "position": {
-                "x": 9697,
+                "x": 10477,
                 "y": 662
-            }
-        }
-    },
-    "进入邮件界面": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    10,
-                    137,
-                    74,
-                    354
-                ],
-                "template": [
-                    "邮件图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "开始一键领取邮件"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 9976,
-                "y": 650
             }
         }
     },
@@ -74,16 +43,49 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10217,
-                "y": 662
+                "x": 10112,
+                "y": 423
             }
         }
     },
-    "$__mpe_external_返回主界面开始_领取邮件": {
+    "进入邮件界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    10,
+                    137,
+                    74,
+                    354
+                ],
+                "template": [
+                    "邮件图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "next": [
+            "开始一键领取邮件",
+            "返回主界面开始"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 10477,
-                "y": 662
+                "x": 9814,
+                "y": 618
+            }
+        }
+    },
+    "领取邮件开始": {
+        "next": [
+            "进入邮件界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9435,
+                "y": 724
             }
         }
     }

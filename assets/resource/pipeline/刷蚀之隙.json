@@ -3,23 +3,23 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787141811686,
+            "lastSyncTime": 1787321780223,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\刷蚀之隙.json",
             "savedViewport": {
-                "x": -9820,
-                "y": 917,
-                "zoom": 0.65
+                "x": -11104,
+                "y": 1081,
+                "zoom": 0.66
             },
             "filename": "刷蚀之隙",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_返回主界面开始_刷蚀之隙": {
         "$__mpe_code": {
             "position": {
-                "x": 18672,
-                "y": -1549
+                "x": 18741,
+                "y": -1216
             }
         }
     },
@@ -127,6 +127,7 @@
         }
     },
     "滑动关卡进行寻找-刷蚀之隙": {
+        "max_hit": 20,
         "action": {
             "type": "Swipe",
             "param": {
@@ -151,8 +152,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 16935,
-                "y": -1021
+                "x": 17155,
+                "y": -1200
             }
         }
     },
@@ -232,6 +233,7 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]进入蚀之隙界面-刷蚀之隙_第二次",
             "返回关卡最前面-刷蚀之隙"
         ],
         "$__mpe_code": {
@@ -256,7 +258,8 @@
     "选择刷第几章-刷蚀之隙": {
         "next": [
             "刷取第一章-刷蚀之隙",
-            "[JumpBack]滑动关卡进行寻找-刷蚀之隙"
+            "[JumpBack]滑动关卡进行寻找-刷蚀之隙",
+            "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -293,6 +296,31 @@
             "position": {
                 "x": 17659,
                 "y": -1516
+            }
+        }
+    },
+    "进入蚀之隙界面-刷蚀之隙_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1188,
+                    104,
+                    84,
+                    460
+                ],
+                "template": [
+                    "蚀之隙图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 16096,
+                "y": -1377
             }
         }
     }

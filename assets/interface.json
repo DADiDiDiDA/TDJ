@@ -57,24 +57,24 @@
             "doc": "自动进行山河志派遣任务"  
         },  
         {  
+            "name": "刷蚀之隙",  
+            "entry": "刷蚀之隙开始",  
+            "default_check": true,  
+            "doc": "刷一次难度最低的第一章简单难度的蚀之隙已完成日常任务"  
+        },  
+        {  
             "name": "刷体力第一次",  
             "entry": "刷体力开始",  
             "default_check": true,  
-            "option": ["选择打什么关卡", "自定义扫荡次数上限"],  
+            "option": ["选择打什么关卡"],  
             "doc": "第一次体力刷取，扫荡（自动选择上限次数）或自动战斗（只能自动打一次）"  
         },  
         {  
             "name": "刷体力第二次",  
             "entry": "刷体力开始",  
             "default_check": true,  
-            "option": ["选择打什么关卡", "自定义扫荡次数上限"],  
+            "option": ["选择打什么关卡"],  
             "doc": "第二次体力刷取，消耗体力扫荡或自动战斗"  
-        },  
-        {  
-            "name": "刷蚀之隙",  
-            "entry": "刷蚀之隙开始",  
-            "default_check": true,  
-            "doc": "刷一次难度最低的第一章简单难度的蚀之隙已完成日常任务"  
         },  
         {  
             "name": "天地阁加速",  
@@ -225,30 +225,6 @@
                 { "name": "扫荡", "label": "扫荡", "pipeline_override": { "刷取关卡方式选择-灵脉光渊": { "next": ["选择扫荡方式-灵脉光渊"] } } },  
                 { "name": "正常对战", "label": "正常对战", "pipeline_override": { "刷取关卡方式选择-灵脉光渊": { "next": ["选择正常对战方式-灵脉光渊"] } } }  
             ]  
-        },  
-        "自定义扫荡次数上限": {  
-            "type": "input",  
-            "label": "扫荡次数上限",  
-            "description": "设置扫荡次数上限（默认4）",  
-            "inputs": [  
-                {  
-                    "name": "扫荡上限次数",  
-                    "label": "$扫荡上限次数",  
-                    "default": "4",  
-                    "pipeline_type": "string",  
-                    "verify": "^\\d+$"  
-                }  
-            ],  
-            "pipeline_override": {  
-                "当前扫荡次数是否为上限": {  
-                    "recognition": {  
-                        "type": "OCR",  
-                        "param": {  
-                            "expected": ["{扫荡上限次数}"]  
-                        }  
-                    }  
-                }  
-            }  
         }  
     }  
 }

@@ -3,16 +3,49 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1786839003162,
+            "lastSyncTime": 1787321772887,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\关卡内作战开始-组件.json",
             "savedViewport": {
-                "x": -8448,
-                "y": 279,
-                "zoom": 0.65
+                "x": -9789,
+                "y": 299,
+                "zoom": 0.76
             },
             "filename": "关卡内作战开始-组件",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
+        }
+    },
+    "$__mpe_external_返回主界面开始_关卡内作战开始-组件": {
+        "$__mpe_code": {
+            "position": {
+                "x": 13367,
+                "y": 166
+            }
+        }
+    },
+    "作战失败": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    439,
+                    506,
+                    131,
+                    44
+                ],
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 14385,
+                "y": -235
+            }
         }
     },
     "关卡内作战开始": {
@@ -75,12 +108,13 @@
         },
         "post_delay": 4000,
         "next": [
-            "开启自动战斗"
+            "开启自动战斗",
+            "[JumpBack]开始作战_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12943,
-                "y": -333
+                "x": 12919,
+                "y": -353
             }
         }
     },
@@ -115,8 +149,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 14330,
-                "y": -419
+                "x": 14372,
+                "y": -489
             }
         }
     },
@@ -148,7 +182,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 13994,
-                "y": -294
+                "y": -316
             }
         }
     },
@@ -159,41 +193,34 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 13666,
-                "y": -267
+                "x": 13645,
+                "y": -329
             }
         }
     },
-    "作战失败": {
+    "开始作战_第二次": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    439,
-                    506,
-                    131,
-                    44
+                    1119,
+                    525,
+                    142,
+                    184
                 ],
-                "expected": [
-                    "取消"
+                "template": [
+                    "出战图标.png"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
+        "post_delay": 4000,
         "$__mpe_code": {
             "position": {
-                "x": 14324,
-                "y": -176
-            }
-        }
-    },
-    "$__mpe_external_返回主界面开始_关卡内作战开始-组件": {
-        "$__mpe_code": {
-            "position": {
-                "x": 13367,
-                "y": 166
+                "x": 13216,
+                "y": -720
             }
         }
     }

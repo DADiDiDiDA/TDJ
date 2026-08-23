@@ -3,13 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787321789237,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\每日免费召唤.json",
             "savedViewport": {
-                "x": -9260,
-                "y": 975,
-                "zoom": 0.66
+                "x": -11132,
+                "y": 1133,
+                "zoom": 0.76
             },
             "filename": "每日免费召唤",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_返回主界面开始_每日免费召唤": {
@@ -56,8 +59,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 15529,
-                "y": -995
+                "x": 15548,
+                "y": -1021
             }
         }
     },
@@ -108,8 +111,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 14981,
-                "y": -1071
+                "x": 14868,
+                "y": -1066
             }
         }
     },
@@ -170,8 +173,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 14260,
-                "y": -940
+                "x": 14084,
+                "y": -980
             }
         }
     },
@@ -265,12 +268,13 @@
         "post_delay": 2000,
         "next": [
             "选择时轮召唤界面-每日免费召唤",
+            "[JumpBack]进入召唤界面-每日免费召唤_第二次",
             "[JumpBack]开始滑动卡池列表-每日免费召唤"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 14588,
-                "y": -1242
+                "x": 14396,
+                "y": -1265
             }
         }
     },
@@ -301,6 +305,32 @@
             "position": {
                 "x": 14981,
                 "y": -1354
+            }
+        }
+    },
+    "进入召唤界面-每日免费召唤_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    311,
+                    582,
+                    804,
+                    112
+                ],
+                "template": [
+                    "召唤图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 14852,
+                "y": -1700
             }
         }
     }

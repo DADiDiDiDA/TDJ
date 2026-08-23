@@ -3,10 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787447544032,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -7642,
-                "y": 981,
-                "zoom": 0.76
+                "x": -9784,
+                "y": -240,
+                "zoom": 1.31
             },
             "filename": "刷体力",
             "version": "v1.8.0"
@@ -141,8 +144,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9327,
-                "y": 106
+                "x": 9324,
+                "y": 136
             }
         }
     },
@@ -165,12 +168,38 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]创命之间_第二次",
             "开始创命之间类型选择"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 8598,
                 "y": 290
+            }
+        }
+    },
+    "创命之间_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    167,
+                    168,
+                    906,
+                    304
+                ],
+                "template": [
+                    "创命之间图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8848,
+                "y": 482
             }
         }
     },
@@ -268,8 +297,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8642,
-                "y": 1176
+                "x": 8627,
+                "y": 1079
             }
         }
     },
@@ -407,8 +436,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9312,
-                "y": 584
+                "x": 9301,
+                "y": 686
             }
         }
     },
@@ -463,8 +492,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8577,
-                "y": 1645
+                "x": 8580,
+                "y": 1506
             }
         }
     },
@@ -515,12 +544,38 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]灵脉光渊_第二次",
             "开始灵脉光渊类型选择"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8540,
-                "y": 45
+                "x": 8546,
+                "y": 0
+            }
+        }
+    },
+    "灵脉光渊_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    167,
+                    168,
+                    906,
+                    304
+                ],
+                "template": [
+                    "灵脉光渊图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8814,
+                "y": -196
             }
         }
     },
@@ -593,7 +648,9 @@
             "type": "Click"
         },
         "next": [
-            "进入试炼挑战界面"
+            "进入试炼挑战界面-图片识别",
+            "[JumpBack]进入异闻界面_第二次",
+            "进入试炼挑战界面-ocr"
         ],
         "$__mpe_code": {
             "position": {
@@ -602,7 +659,33 @@
             }
         }
     },
-    "进入试炼挑战界面": {
+    "进入异闻界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1184,
+                    77,
+                    83,
+                    461
+                ],
+                "template": [
+                    "异闻图标.png"
+                ]
+            }
+        },
+        "pre_wait_freezes": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7728,
+                "y": 675
+            }
+        }
+    },
+    "进入试炼挑战界面-图片识别": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -626,8 +709,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7851,
-                "y": 432
+                "x": 7798,
+                "y": 402
             }
         }
     },
@@ -652,12 +735,40 @@
             "type": "Click"
         },
         "next": [
-            "判断是否在关卡内"
+            "判断是否在关卡内",
+            "[JumpBack]选择可作战的关卡-灵脉光渊_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11021,
-                "y": -349
+                "x": 10971,
+                "y": -354
+            }
+        }
+    },
+    "选择可作战的关卡-灵脉光渊_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    939,
+                    74,
+                    121,
+                    637
+                ],
+                "template": [
+                    "关卡战斗图标.png"
+                ],
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 11359,
+                "y": -143
             }
         }
     },
@@ -693,6 +804,36 @@
             "position": {
                 "x": 10792,
                 "y": -891
+            }
+        }
+    },
+    "选择可扫荡的关卡-灵脉光渊_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    832,
+                    66,
+                    112,
+                    650
+                ],
+                "template": [
+                    "扫荡按钮.png",
+                    "扫荡按钮2.png"
+                ],
+                "green_mask": true,
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 11045,
+                "y": -1307
             }
         }
     },
@@ -789,8 +930,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9327,
-                "y": 337
+                "x": 9313,
+                "y": 402
             }
         }
     },
@@ -814,38 +955,36 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8632,
-                "y": 1350
+                "x": 8624,
+                "y": 1305
             }
         }
     },
-    "选择可扫荡的关卡-灵脉光渊_副本1": {
+    "进入试炼挑战界面-ocr": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
                 "roi": [
-                    832,
-                    66,
-                    112,
-                    650
+                    1098,
+                    111,
+                    160,
+                    105
                 ],
-                "template": [
-                    "扫荡按钮.png",
-                    "扫荡按钮2.png"
-                ],
-                "green_mask": true,
-                "order_by": "Vertical",
-                "index": -1
+                "expected": [
+                    "试炼挑战"
+                ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
+        "next": [
+            "选择打什么关卡"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 11077,
-                "y": -1278
+                "x": 7791,
+                "y": 260
             }
         }
     }
