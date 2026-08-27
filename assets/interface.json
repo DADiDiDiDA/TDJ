@@ -57,24 +57,24 @@
             "doc": "自动进行山河志派遣任务"  
         },  
         {  
+            "name": "刷灵脉光渊",  
+            "entry": "旧世领取开始",  
+            "default_check": true,  
+            "option": ["刷灵脉光渊-选择属性"],  
+            "doc": "刷一次灵脉光渊并领取旧世奖励"  
+        },  
+        {  
             "name": "刷蚀之隙",  
             "entry": "刷蚀之隙开始",  
             "default_check": true,  
             "doc": "刷一次难度最低的第一章简单难度的蚀之隙已完成日常任务"  
         },  
         {  
-            "name": "刷体力第一次",  
+            "name": "刷体力",  
             "entry": "刷体力开始",  
             "default_check": true,  
             "option": ["选择打什么关卡"],  
-            "doc": "第一次体力刷取，扫荡（自动选择上限次数）或自动战斗（只能自动打一次）"  
-        },  
-        {  
-            "name": "刷体力第二次",  
-            "entry": "刷体力开始",  
-            "default_check": true,  
-            "option": ["选择打什么关卡"],  
-            "doc": "第二次体力刷取，消耗体力扫荡或自动战斗"  
+            "doc": "消耗体力进行扫荡（自动选择上限次数）或自动战斗（只能自动打一次）"  
         },  
         {  
             "name": "天地阁加速",  
@@ -108,24 +108,24 @@
         }  
     ],  
     "option": {  
+        "刷灵脉光渊-选择属性": {  
+            "type": "select",  
+            "label": "灵脉光渊 - 选择属性",  
+            "default": "炎之灵脉",  
+            "cases": [  
+                { "name": "炎之灵脉", "label": "炎之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["炎之灵脉"] } } },  
+                { "name": "冰之灵脉", "label": "冰之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["冰之灵脉"] } } },  
+                { "name": "雷之灵脉", "label": "雷之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["雷之灵脉"] } } },  
+                { "name": "光之灵脉", "label": "光之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["光之灵脉"] } } },  
+                { "name": "暗之灵脉", "label": "暗之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["暗之灵脉"] } } },  
+                { "name": "幽之灵脉", "label": "幽之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["幽之灵脉"] } } }  
+            ]  
+        },  
         "选择打什么关卡": {  
             "type": "select",  
             "label": "选择关卡",  
-            "default": "灵脉光渊",  
+            "default": "创命之间",  
             "cases": [  
-                {  
-                    "name": "灵脉光渊",  
-                    "label": "灵脉光渊",  
-                    "option": ["开始灵脉光渊类型选择", "刷取关卡方式选择-灵脉光渊"],  
-                    "pipeline_override": {  
-                        "选择打什么关卡": {  
-                            "next": [  
-                                "灵脉光渊",  
-                                "[JumpBack]滑动屏幕进行关卡选择"  
-                            ]  
-                        }  
-                    }  
-                },  
                 {  
                     "name": "创命之间",  
                     "label": "创命之间",  
@@ -191,19 +191,6 @@
                         }  
                     }  
                 }  
-            ]  
-        },  
-        "开始灵脉光渊类型选择": {  
-            "type": "select",  
-            "label": "灵脉光渊 - 选择属性",  
-            "default": "炎之灵脉",  
-            "cases": [  
-                { "name": "炎之灵脉", "label": "炎之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["炎之灵脉"] } } },  
-                { "name": "冰之灵脉", "label": "冰之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["冰之灵脉"] } } },  
-                { "name": "雷之灵脉", "label": "雷之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["雷之灵脉"] } } },  
-                { "name": "光之灵脉", "label": "光之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["光之灵脉"] } } },  
-                { "name": "暗之灵脉", "label": "暗之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["暗之灵脉"] } } },  
-                { "name": "幽之灵脉", "label": "幽之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["幽之灵脉"] } } }  
             ]  
         },  
         "开始创命之间类型选择": {  

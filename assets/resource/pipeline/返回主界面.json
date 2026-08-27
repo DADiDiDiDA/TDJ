@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -76,
-                "y": -580,
-                "zoom": 0.5
+                "x": -68,
+                "y": -118,
+                "zoom": 0.41
             },
             "filename": "返回主界面",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "主界面特征1": {
@@ -70,8 +70,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1512,
-                "y": 1302
+                "x": 1566,
+                "y": 1248
             }
         }
     },
@@ -80,10 +80,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1149,
-                    27,
-                    92,
-                    79
+                    1003,
+                    26,
+                    237,
+                    121
                 ],
                 "template": [
                     "公告叉号.png"
@@ -145,6 +145,17 @@
             }
         }
     },
+    "尝试捕获错误": {
+        "action": {
+            "type": "Screencap"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1091,
+                "y": 1017
+            }
+        }
+    },
     "左上角返回箭头": {
         "recognition": {
             "type": "TemplateMatch",
@@ -165,8 +176,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1499,
-                "y": 398
+                "x": 1489,
+                "y": 341
             }
         }
     },
@@ -190,13 +201,13 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1559,
-                "y": 673
+                "x": 1535,
+                "y": 551
             }
         }
     },
     "按Esc返回": {
-        "max_hit": 20,
+        "max_hit": 10,
         "action": {
             "type": "ClickKey",
             "param": {
@@ -208,8 +219,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1494,
-                "y": 1740
+                "x": 1505,
+                "y": 1736
             }
         }
     },
@@ -225,7 +236,9 @@
                 ],
                 "expected": [
                     "空白处继续",
-                    "进入游戏"
+                    "进入游戏",
+                    "关闭",
+                    "任意位置"
                 ]
             }
         },
@@ -234,8 +247,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1555,
-                "y": 880
+                "x": 1573,
+                "y": 753
             }
         }
     },
@@ -259,14 +272,14 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1546,
-                "y": 1098
+                "x": 1577,
+                "y": 983
             }
         }
     },
     "返回主界面开始": {
         "post_delay": 3000,
-        "timeout": -1,
+        "timeout": 120000,
         "next": [
             "[JumpBack]返回过头了吗",
             "判断是否在主界面",
@@ -277,7 +290,8 @@
             "[JumpBack]等级提升",
             "[JumpBack]关卡失败退出",
             "[JumpBack]需要下载数据",
-            "[JumpBack]按Esc返回"
+            "[JumpBack]按Esc返回",
+            "尝试捕获错误"
         ],
         "$__mpe_code": {
             "position": {
@@ -339,8 +353,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1521,
-                "y": 1526
+                "x": 1541,
+                "y": 1497
             }
         }
     }

@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787447544032,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -9784,
-                "y": -240,
-                "zoom": 1.31
+                "x": -4498,
+                "y": 371,
+                "zoom": 0.66
             },
             "filename": "刷体力",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_关卡内作战开始_刷体力": {
@@ -36,7 +33,13 @@
             "position": {
                 "x": 11919,
                 "y": 431
-            }
+            },
+            "extra_positions": [
+                {
+                    "x": 7777,
+                    "y": -377
+                }
+            ]
         }
     },
     "体力不足任务结束": {
@@ -173,8 +176,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8598,
-                "y": 290
+                "x": 8561,
+                "y": 303
             }
         }
     },
@@ -198,8 +201,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8848,
-                "y": 482
+                "x": 8882,
+                "y": 472
             }
         }
     },
@@ -223,8 +226,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11421,
-                "y": -380
+                "x": 11371,
+                "y": -455
             }
         }
     },
@@ -235,8 +238,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7005,
-                "y": 667
+                "x": 6777,
+                "y": 469
             }
         }
     },
@@ -339,8 +342,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8877,
-                "y": 346
+                "x": 8896,
+                "y": 253
             }
         }
     },
@@ -355,8 +358,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8818,
-                "y": 53
+                "x": 8654,
+                "y": -255
             }
         }
     },
@@ -530,13 +533,14 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    167,
-                    168,
-                    906,
-                    304
+                    253,
+                    56,
+                    346,
+                    290
                 ],
                 "template": [
-                    "灵脉光渊图标.png"
+                    "灵脉光渊图标.png",
+                    "灵脉光渊图标2.png"
                 ]
             }
         },
@@ -549,33 +553,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8546,
-                "y": 0
-            }
-        }
-    },
-    "灵脉光渊_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    167,
-                    168,
-                    906,
-                    304
-                ],
-                "template": [
-                    "灵脉光渊图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 8814,
-                "y": -196
+                "x": 8155,
+                "y": -308
             }
         }
     },
@@ -623,8 +602,8 @@
         "post_delay": 2500,
         "$__mpe_code": {
             "position": {
-                "x": 7468,
-                "y": 832
+                "x": 7247,
+                "y": 742
             }
         }
     },
@@ -654,8 +633,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7441,
-                "y": 453
+                "x": 7361,
+                "y": 329
             }
         }
     },
@@ -682,6 +661,36 @@
             "position": {
                 "x": 7728,
                 "y": 675
+            }
+        }
+    },
+    "进入试炼挑战界面-ocr": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1098,
+                    111,
+                    160,
+                    105
+                ],
+                "expected": [
+                    "挑战",
+                    "试炼",
+                    "桃战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择打什么关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7776,
+                "y": 115
             }
         }
     },
@@ -740,8 +749,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10971,
-                "y": -354
+                "x": 11003,
+                "y": -407
             }
         }
     },
@@ -767,8 +776,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 11359,
-                "y": -143
+                "x": 11381,
+                "y": -215
             }
         }
     },
@@ -840,7 +849,6 @@
     "选择打什么关卡": {
         "post_delay": 2000,
         "next": [
-            "灵脉光渊",
             "创命之间",
             "剑论九州",
             "海捕今",
@@ -960,18 +968,40 @@
             }
         }
     },
-    "进入试炼挑战界面-ocr": {
+    "选择类型为灵脉光渊": {
+        "next": [
+            "灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7812,
+                "y": -186
+            }
+        }
+    },
+    "旧世领取开始": {
+        "next": [
+            "开始进入旧世界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6494,
+                "y": -148
+            }
+        }
+    },
+    "开始进入旧世界面": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1098,
-                    111,
-                    160,
-                    105
+                    219,
+                    593,
+                    888,
+                    95
                 ],
-                "expected": [
-                    "试炼挑战"
+                "template": [
+                    "旧世图标.png"
                 ]
             }
         },
@@ -979,12 +1009,156 @@
             "type": "Click"
         },
         "next": [
-            "选择打什么关卡"
+            "旧世奖励领取了吗",
+            "[JumpBack]开始进入旧世界面_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7791,
-                "y": 260
+                "x": 6864,
+                "y": -172
+            }
+        }
+    },
+    "旧世奖励领取了吗": {
+        "post_delay": 1000,
+        "next": [
+            "旧世奖励已领取",
+            "[JumpBack]领取旧世每日奖励",
+            "[JumpBack]开始进入旧世界面_第三次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7201,
+                "y": -111
+            }
+        }
+    },
+    "开始进入旧世界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    219,
+                    593,
+                    888,
+                    95
+                ],
+                "template": [
+                    "旧世图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7180,
+                "y": -415
+            }
+        }
+    },
+    "旧世奖励已领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    479,
+                    653,
+                    149,
+                    57
+                ],
+                "expected": [
+                    "已领取"
+                ]
+            }
+        },
+        "next": [
+            "选择类型为灵脉光渊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7528,
+                "y": -186
+            }
+        }
+    },
+    "领取旧世每日奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    468,
+                    640,
+                    160,
+                    79
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7499,
+                "y": -421
+            }
+        }
+    },
+    "开始进入旧世界面_第三次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    219,
+                    593,
+                    888,
+                    95
+                ],
+                "template": [
+                    "旧世图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7533,
+                "y": 40
+            }
+        }
+    },
+    "灵脉光渊_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    253,
+                    56,
+                    346,
+                    290
+                ],
+                "template": [
+                    "灵脉光渊图标.png",
+                    "灵脉光渊图标2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8497,
+                "y": -518
             }
         }
     }

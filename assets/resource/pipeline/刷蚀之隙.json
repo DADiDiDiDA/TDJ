@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787321780223,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\刷蚀之隙.json",
             "savedViewport": {
-                "x": -11104,
-                "y": 1081,
-                "zoom": 0.66
+                "x": -9627,
+                "y": 935,
+                "zoom": 0.62
             },
             "filename": "刷蚀之隙",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_返回主界面开始_刷蚀之隙": {
@@ -54,12 +51,13 @@
     "刷蚀之隙开始": {
         "next": [
             "进入蚀之隙界面-刷蚀之隙",
-            "[JumpBack]进入启程界面-刷蚀之隙"
+            "[JumpBack]进入启程界面-刷蚀之隙",
+            "进入蚀之隙界面-刷蚀之隙OCR"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 15158,
-                "y": -981
+                "x": 15000,
+                "y": -1013
             }
         }
     },
@@ -91,10 +89,11 @@
                 ]
             }
         },
+        "post_delay": 2500,
         "$__mpe_code": {
             "position": {
-                "x": 18098,
-                "y": -1101
+                "x": 18087,
+                "y": -1334
             }
         }
     },
@@ -150,10 +149,11 @@
                 ]
             }
         },
+        "post_delay": 1500,
         "$__mpe_code": {
             "position": {
-                "x": 17155,
-                "y": -1200
+                "x": 16991,
+                "y": -1097
             }
         }
     },
@@ -209,12 +209,80 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 15544,
-                "y": -775
+                "x": 15424,
+                "y": -860
             }
         }
     },
     "进入蚀之隙界面-刷蚀之隙": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1149,
+                    96,
+                    112,
+                    481
+                ],
+                "template": [
+                    "蚀之隙图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]进入蚀之隙界面-刷蚀之隙_第二次",
+            "[JumpBack]进入蚀之隙界面-刷蚀之隙OCR_第二次",
+            "返回关卡最前面-刷蚀之隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 15493,
+                "y": -1126
+            }
+        }
+    },
+    "进入蚀之隙界面-刷蚀之隙OCR": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1149,
+                    96,
+                    112,
+                    481
+                ],
+                "expected": [
+                    "蚀之隙"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -24,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]进入蚀之隙界面-刷蚀之隙_第二次",
+            "[JumpBack]进入蚀之隙界面-刷蚀之隙OCR_第二次",
+            "返回关卡最前面-刷蚀之隙"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 15518,
+                "y": -1437
+            }
+        }
+    },
+    "进入蚀之隙界面-刷蚀之隙_第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -232,14 +300,10 @@
         "action": {
             "type": "Click"
         },
-        "next": [
-            "[JumpBack]进入蚀之隙界面-刷蚀之隙_第二次",
-            "返回关卡最前面-刷蚀之隙"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 15779,
-                "y": -1075
+                "x": 15996,
+                "y": -1630
             }
         }
     },
@@ -290,7 +354,8 @@
         },
         "next": [
             "开始扫荡-刷蚀之隙",
-            "[JumpBack]寻找已通关关卡-刷蚀之隙"
+            "[JumpBack]寻找已通关关卡-刷蚀之隙",
+            "[JumpBack]刷取第一章-刷蚀之隙_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -299,18 +364,51 @@
             }
         }
     },
-    "进入蚀之隙界面-刷蚀之隙_第二次": {
+    "进入蚀之隙界面-刷蚀之隙OCR_第二次": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
                 "roi": [
-                    1188,
-                    104,
-                    84,
-                    460
+                    1149,
+                    96,
+                    112,
+                    481
                 ],
-                "template": [
-                    "蚀之隙图标.png"
+                "expected": [
+                    "蚀之隙"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -24,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 16069,
+                "y": -1418
+            }
+        }
+    },
+    "刷取第一章-刷蚀之隙_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    34,
+                    496,
+                    1235,
+                    126
+                ],
+                "expected": [
+                    "第一章"
                 ]
             }
         },
@@ -319,8 +417,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 16096,
-                "y": -1377
+                "x": 18027,
+                "y": -953
             }
         }
     }

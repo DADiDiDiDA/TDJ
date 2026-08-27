@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787448590150,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\关卡扫荡.json",
             "savedViewport": {
-                "x": -8261,
-                "y": 800,
-                "zoom": 0.66
+                "x": -7869,
+                "y": 755,
+                "zoom": 0.62
             },
             "filename": "关卡扫荡",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_返回主界面开始_关卡扫荡": {
@@ -95,8 +92,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 13391,
-                "y": -988
+                "x": 13405,
+                "y": -1023
             }
         }
     },
@@ -161,8 +158,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 13038,
-                "y": -815
+                "x": 13021,
+                "y": -850
             }
         }
     },
@@ -189,8 +186,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 14143,
-                "y": -1312
+                "x": 14141,
+                "y": -1360
             }
         }
     },
@@ -202,8 +199,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12607,
-                "y": -973
+                "x": 12428,
+                "y": -886
             }
         }
     },

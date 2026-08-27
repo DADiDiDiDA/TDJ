@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787321791704,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\赠送友情点.json",
             "savedViewport": {
-                "x": -1779,
-                "y": 59,
-                "zoom": 0.57
+                "x": -2111,
+                "y": 19,
+                "zoom": 0.62
             },
             "filename": "赠送友情点",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_返回主界面开始_赠送友情点": {

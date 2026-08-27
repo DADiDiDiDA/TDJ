@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787321772887,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\关卡内作战开始-组件.json",
             "savedViewport": {
-                "x": -9789,
-                "y": 299,
-                "zoom": 0.76
+                "x": -9156,
+                "y": 206,
+                "zoom": 0.72
             },
             "filename": "关卡内作战开始-组件",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_返回主界面开始_关卡内作战开始-组件": {
@@ -55,8 +52,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12603,
-                "y": -235
+                "x": 12498,
+                "y": -207
             }
         }
     },
@@ -189,7 +186,8 @@
     "等待战斗结束": {
         "timeout": -1,
         "next": [
-            "确认战斗结束"
+            "确认战斗结束",
+            "[JumpBack]开启自动战斗_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -221,6 +219,31 @@
             "position": {
                 "x": 13216,
                 "y": -720
+            }
+        }
+    },
+    "开启自动战斗_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1178,
+                    229,
+                    79,
+                    84
+                ],
+                "template": [
+                    "自动战斗未开启图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 13996,
+                "y": -566
             }
         }
     }

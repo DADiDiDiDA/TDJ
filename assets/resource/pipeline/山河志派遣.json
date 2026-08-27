@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787321786205,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\山河志派遣.json",
             "savedViewport": {
-                "x": -3534,
-                "y": -346,
+                "x": -2859,
+                "y": -67,
                 "zoom": 0.57
             },
             "filename": "山河志派遣",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_返回主界面开始_山河志派遣": {
@@ -59,8 +56,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6568,
-                "y": 262
+                "x": 6680,
+                "y": 502
             }
         }
     },
@@ -118,8 +115,8 @@
     },
     "开始检查是否满足派遣要求": {
         "next": [
-            "判断是否满足派遣任务",
             "满足派遣条件开始执行",
+            "判断是否满足派遣任务",
             "派遣队列已经上限"
         ],
         "$__mpe_code": {
@@ -180,8 +177,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5597,
-                "y": 433
+                "x": 5593,
+                "y": 405
             }
         }
     },
@@ -366,8 +363,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5270,
-                "y": 461
+                "x": 5277,
+                "y": 385
             }
         }
     },
@@ -445,8 +442,8 @@
         "post_delay": 2500,
         "$__mpe_code": {
             "position": {
-                "x": 5062,
-                "y": 705
+                "x": 5073,
+                "y": 644
             }
         }
     }

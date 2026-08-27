@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787321990547,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\通关文牒奖励.json",
             "savedViewport": {
-                "x": -1943,
-                "y": -5,
-                "zoom": 0.44
+                "x": -3257,
+                "y": -21,
+                "zoom": 0.62
             },
             "filename": "通关文牒奖励",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_返回主界面开始_通关文牒奖励": {
@@ -159,7 +156,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 5784,
-                "y": 418
+                "y": 396
             }
         }
     }
