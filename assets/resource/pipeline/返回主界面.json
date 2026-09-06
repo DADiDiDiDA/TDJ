@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -68,
-                "y": -118,
-                "zoom": 0.41
+                "x": -621,
+                "y": -907,
+                "zoom": 0.76
             },
             "filename": "返回主界面",
-            "version": "v1.9.0"
+            "version": "v1.9.2"
         }
     },
     "主界面特征1": {
@@ -70,8 +70,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1566,
-                "y": 1248
+                "x": 1558,
+                "y": 1304
             }
         }
     },
@@ -145,17 +145,6 @@
             }
         }
     },
-    "尝试捕获错误": {
-        "action": {
-            "type": "Screencap"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1091,
-                "y": 1017
-            }
-        }
-    },
     "左上角返回箭头": {
         "recognition": {
             "type": "TemplateMatch",
@@ -203,24 +192,6 @@
             "position": {
                 "x": 1535,
                 "y": 551
-            }
-        }
-    },
-    "按Esc返回": {
-        "max_hit": 10,
-        "action": {
-            "type": "ClickKey",
-            "param": {
-                "key": [
-                    111,
-                    4
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1505,
-                "y": 1736
             }
         }
     },
@@ -279,7 +250,7 @@
     },
     "返回主界面开始": {
         "post_delay": 3000,
-        "timeout": 120000,
+        "timeout": 300000,
         "next": [
             "[JumpBack]返回过头了吗",
             "判断是否在主界面",
@@ -288,10 +259,9 @@
             "[JumpBack]开始扎营",
             "[JumpBack]界面下方处理继续",
             "[JumpBack]等级提升",
+            "[JumpBack]网络连接错误弹窗",
             "[JumpBack]关卡失败退出",
-            "[JumpBack]需要下载数据",
-            "[JumpBack]按Esc返回",
-            "尝试捕获错误"
+            "[JumpBack]需要下载数据"
         ],
         "$__mpe_code": {
             "position": {
@@ -303,8 +273,8 @@
     "返回主界面结束": {
         "$__mpe_code": {
             "position": {
-                "x": 1909,
-                "y": -50
+                "x": 1907,
+                "y": -29
             }
         }
     },
@@ -328,8 +298,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1458,
-                "y": -287
+                "x": 1447,
+                "y": -326
             }
         }
     },
@@ -355,6 +325,56 @@
             "position": {
                 "x": 1541,
                 "y": 1497
+            }
+        }
+    },
+    "网络连接错误弹窗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    552,
+                    333,
+                    184,
+                    60
+                ],
+                "expected": [
+                    "网络连接错误"
+                ]
+            }
+        },
+        "next": [
+            "网络连接错误弹窗处理"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1584,
+                "y": 1201
+            }
+        }
+    },
+    "网络连接错误弹窗处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    589,
+                    504,
+                    91,
+                    50
+                ],
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1844,
+                "y": 1201
             }
         }
     }

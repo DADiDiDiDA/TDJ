@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1788310294349,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\山河志派遣.json",
             "savedViewport": {
-                "x": -2859,
-                "y": -67,
-                "zoom": 0.57
+                "x": -2892,
+                "y": -188,
+                "zoom": 0.76
             },
             "filename": "山河志派遣",
-            "version": "v1.9.0"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_返回主界面开始_山河志派遣": {
@@ -312,7 +316,8 @@
                     123
                 ],
                 "template": [
-                    "山河志图标.png"
+                    "山河志图标.png",
+                    "山河志异动图标.png"
                 ]
             }
         },
@@ -330,6 +335,32 @@
             "position": {
                 "x": 4751,
                 "y": 361
+            }
+        }
+    },
+    "进入山河志界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    306,
+                    585,
+                    807,
+                    123
+                ],
+                "template": [
+                    "山河志图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2500,
+        "$__mpe_code": {
+            "position": {
+                "x": 5073,
+                "y": 644
             }
         }
     },
@@ -418,32 +449,6 @@
             "position": {
                 "x": 7205,
                 "y": 236
-            }
-        }
-    },
-    "进入山河志界面_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    306,
-                    585,
-                    807,
-                    123
-                ],
-                "template": [
-                    "山河志图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2500,
-        "$__mpe_code": {
-            "position": {
-                "x": 5073,
-                "y": 644
             }
         }
     }
