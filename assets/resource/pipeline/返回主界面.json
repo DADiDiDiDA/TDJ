@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -621,
-                "y": -907,
-                "zoom": 0.76
+                "x": 77,
+                "y": -183,
+                "zoom": 0.5
             },
             "filename": "返回主界面",
-            "version": "v1.9.2"
+            "version": "v1.9.3"
         }
     },
     "主界面特征1": {
@@ -70,8 +70,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1558,
-                "y": 1304
+                "x": 1536,
+                "y": 1455
             }
         }
     },
@@ -261,7 +261,10 @@
             "[JumpBack]等级提升",
             "[JumpBack]网络连接错误弹窗",
             "[JumpBack]关卡失败退出",
-            "[JumpBack]需要下载数据"
+            "[JumpBack]需要下载数据",
+            "[JumpBack]点击Esc返回-第一次",
+            "[JumpBack]无法处理的错误",
+            "[JumpBack]点击Esc返回-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -323,8 +326,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1541,
-                "y": 1497
+                "x": 1507,
+                "y": 1687
             }
         }
     },
@@ -375,6 +378,53 @@
             "position": {
                 "x": 1844,
                 "y": 1201
+            }
+        }
+    },
+    "点击Esc返回-第一次": {
+        "max_hit": 10,
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111,
+                    4
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1085,
+                "y": 926
+            }
+        }
+    },
+    "无法处理的错误": {
+        "max_hit": 1,
+        "action": {
+            "type": "Screencap"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 879,
+                "y": 1110
+            }
+        }
+    },
+    "点击Esc返回-第二次": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111,
+                    4
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 498,
+                "y": 600
             }
         }
     }
