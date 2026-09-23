@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1788310294349,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\山河志派遣.json",
             "savedViewport": {
-                "x": -2892,
-                "y": -188,
-                "zoom": 0.76
+                "x": -3335,
+                "y": 84,
+                "zoom": 0.66
             },
             "filename": "山河志派遣",
-            "version": "v1.9.2"
+            "version": "v1.10.1"
         }
     },
     "$__mpe_external_返回主界面开始_山河志派遣": {
@@ -257,7 +253,8 @@
             "type": "Click"
         },
         "next": [
-            "选择任务地区"
+            "选择任务地区",
+            "[JumpBack]满足派遣条件开始执行_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -449,6 +446,32 @@
             "position": {
                 "x": 7205,
                 "y": 236
+            }
+        }
+    },
+    "满足派遣条件开始执行_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1042,
+                    596,
+                    202,
+                    108
+                ],
+                "template": [
+                    "已激活派遣图标.png",
+                    "已激活的加入队列图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6311,
+                "y": 70
             }
         }
     }

@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790122655065,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": 77,
-                "y": -183,
-                "zoom": 0.5
+                "x": -669,
+                "y": 34,
+                "zoom": 0.87
             },
             "filename": "返回主界面",
-            "version": "v1.9.3"
+            "version": "v1.10.1"
         }
     },
     "主界面特征1": {
@@ -50,6 +54,60 @@
             }
         }
     },
+    "位于关卡内-退出开始": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1169,
+                    4,
+                    112,
+                    91
+                ],
+                "template": [
+                    "关卡内选项图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始关卡内退出",
+            "[JumpBack]位于关卡内-退出开始_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1489,
+                "y": 1875
+            }
+        }
+    },
+    "位于关卡内-退出开始_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1169,
+                    4,
+                    112,
+                    91
+                ],
+                "template": [
+                    "关卡内选项图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1752,
+                "y": 2096
+            }
+        }
+    },
     "关卡失败退出": {
         "recognition": {
             "type": "OCR",
@@ -80,10 +138,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1003,
-                    26,
-                    237,
-                    121
+                    1002,
+                    9,
+                    271,
+                    138
                 ],
                 "template": [
                     "公告叉号.png"
@@ -170,6 +228,60 @@
             }
         }
     },
+    "开始关卡内退出": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1068,
+                    575,
+                    123,
+                    136
+                ],
+                "template": [
+                    "关卡内退出图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "确认关卡内退出",
+            "[JumpBack]开始关卡内退出_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1783,
+                "y": 1783
+            }
+        }
+    },
+    "开始关卡内退出_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1068,
+                    575,
+                    123,
+                    136
+                ],
+                "template": [
+                    "关卡内退出图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2052,
+                "y": 2007
+            }
+        }
+    },
     "开始扎营": {
         "recognition": {
             "type": "OCR",
@@ -192,6 +304,53 @@
             "position": {
                 "x": 1535,
                 "y": 551
+            }
+        }
+    },
+    "无法处理的错误": {
+        "max_hit": 1,
+        "action": {
+            "type": "Screencap"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 879,
+                "y": 1110
+            }
+        }
+    },
+    "点击Esc返回-第一次": {
+        "max_hit": 10,
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111,
+                    4
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1085,
+                "y": 926
+            }
+        }
+    },
+    "点击Esc返回-第二次": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111,
+                    4
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 541,
+                "y": 791
             }
         }
     },
@@ -223,6 +382,64 @@
             }
         }
     },
+    "确认关卡内退出": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    701,
+                    394,
+                    131,
+                    210
+                ],
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2153,
+                "y": 1801
+            }
+        }
+    },
+    "确认战斗结果": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    528,
+                    85,
+                    222,
+                    73
+                ],
+                "expected": [
+                    "战斗结果"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    5,
+                    -76,
+                    -6,
+                    -50
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1462,
+                "y": 2179
+            }
+        }
+    },
     "等级提升": {
         "recognition": {
             "type": "OCR",
@@ -248,6 +465,56 @@
             }
         }
     },
+    "网络连接错误弹窗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    552,
+                    333,
+                    184,
+                    60
+                ],
+                "expected": [
+                    "网络连接错误"
+                ]
+            }
+        },
+        "next": [
+            "网络连接错误弹窗处理"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1584,
+                "y": 1201
+            }
+        }
+    },
+    "网络连接错误弹窗处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    589,
+                    504,
+                    91,
+                    50
+                ],
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1844,
+                "y": 1201
+            }
+        }
+    },
     "返回主界面开始": {
         "post_delay": 3000,
         "timeout": 300000,
@@ -262,6 +529,8 @@
             "[JumpBack]网络连接错误弹窗",
             "[JumpBack]关卡失败退出",
             "[JumpBack]需要下载数据",
+            "[JumpBack]位于关卡内-退出开始",
+            "[JumpBack]确认战斗结果",
             "[JumpBack]点击Esc返回-第一次",
             "[JumpBack]无法处理的错误",
             "[JumpBack]点击Esc返回-第二次"
@@ -328,103 +597,6 @@
             "position": {
                 "x": 1507,
                 "y": 1687
-            }
-        }
-    },
-    "网络连接错误弹窗": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    552,
-                    333,
-                    184,
-                    60
-                ],
-                "expected": [
-                    "网络连接错误"
-                ]
-            }
-        },
-        "next": [
-            "网络连接错误弹窗处理"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1584,
-                "y": 1201
-            }
-        }
-    },
-    "网络连接错误弹窗处理": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    589,
-                    504,
-                    91,
-                    50
-                ],
-                "expected": [
-                    "确定"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1844,
-                "y": 1201
-            }
-        }
-    },
-    "点击Esc返回-第一次": {
-        "max_hit": 10,
-        "action": {
-            "type": "ClickKey",
-            "param": {
-                "key": [
-                    111,
-                    4
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1085,
-                "y": 926
-            }
-        }
-    },
-    "无法处理的错误": {
-        "max_hit": 1,
-        "action": {
-            "type": "Screencap"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 879,
-                "y": 1110
-            }
-        }
-    },
-    "点击Esc返回-第二次": {
-        "action": {
-            "type": "ClickKey",
-            "param": {
-                "key": [
-                    111,
-                    4
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 498,
-                "y": 600
             }
         }
     }

@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1789777395182,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\幻境挑战.json",
             "savedViewport": {
-                "x": -5985,
-                "y": -404,
-                "zoom": 0.72
+                "x": -4855,
+                "y": -36,
+                "zoom": 0.76
             },
             "filename": "幻境挑战",
-            "version": "v1.9.0"
+            "version": "v1.10.1"
         }
     },
     "$__mpe_external_返回主界面开始_幻境挑战": {
@@ -99,8 +103,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8075,
-                "y": -331
+                "x": 8067,
+                "y": -400
             }
         }
     },
@@ -134,13 +138,13 @@
     },
     "幻境挑战开始": {
         "next": [
-            "进入幻境菜单-幻境挑战",
+            "进入斗场菜单-幻境挑战",
             "[JumpBack]开始进入幻境上级菜单-幻境挑战"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6581,
-                "y": 497
+                "x": 5887,
+                "y": 377
             }
         }
     },
@@ -234,8 +238,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 6996,
-                "y": 583
+                "x": 6266,
+                "y": 514
             }
         }
     },
@@ -245,12 +249,12 @@
             "[JumpBack]选择第一位对手-幻境挑战",
             "[JumpBack]竞技场特殊情况处理",
             "[JumpBack]幻境位阶提升",
-            "[JumpBack]进入幻境菜单-幻境挑战_第二次"
+            "[JumpBack]进入幻境界面开始_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7317,
-                "y": 254
+                "x": 7265,
+                "y": 228
             }
         }
     },
@@ -284,10 +288,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1106,
-                    545,
-                    155,
-                    162
+                    1097,
+                    528,
+                    183,
+                    188
                 ],
                 "template": [
                     "出战图标.png"
@@ -304,6 +308,31 @@
             "position": {
                 "x": 8614,
                 "y": 511
+            }
+        }
+    },
+    "确认出战-幻境挑战_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1097,
+                    528,
+                    183,
+                    188
+                ],
+                "template": [
+                    "出战图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 9198,
+                "y": 1045
             }
         }
     },
@@ -368,12 +397,12 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8105,
-                "y": -113
+                "x": 8085,
+                "y": -171
             }
         }
     },
-    "进入幻境菜单-幻境挑战": {
+    "进入斗场菜单-幻境挑战": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -384,7 +413,7 @@
                     450
                 ],
                 "template": [
-                    "幻境图标.png"
+                    "斗场图标.png"
                 ]
             }
         },
@@ -393,16 +422,17 @@
         },
         "post_delay": 2500,
         "next": [
-            "是否进入幻境菜单判断"
+            "进入幻境界面开始",
+            "[JumpBack]进入斗场菜单-幻境挑战_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7019,
-                "y": 174
+                "x": 6396,
+                "y": 125
             }
         }
     },
-    "进入幻境菜单-幻境挑战_第二次": {
+    "进入斗场菜单-幻境挑战_第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -413,7 +443,7 @@
                     450
                 ],
                 "template": [
-                    "幻境图标.png"
+                    "斗场图标.png"
                 ]
             }
         },
@@ -423,8 +453,8 @@
         "post_delay": 2500,
         "$__mpe_code": {
             "position": {
-                "x": 7667,
-                "y": 578
+                "x": 6709,
+                "y": 384
             }
         }
     },
@@ -502,18 +532,46 @@
             }
         }
     },
-    "确认出战-幻境挑战_第二次": {
+    "进入幻境界面开始": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1106,
-                    545,
+                    54,
                     155,
-                    162
+                    1218,
+                    390
                 ],
                 "template": [
-                    "出战图标.png"
+                    "幻境图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "是否进入幻境菜单判断"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6813,
+                "y": 130
+            }
+        }
+    },
+    "进入幻境界面开始_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    54,
+                    155,
+                    1218,
+                    390
+                ],
+                "template": [
+                    "幻境图标.png"
                 ]
             }
         },
@@ -522,8 +580,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 9198,
-                "y": 1045
+                "x": 7565,
+                "y": 619
             }
         }
     }
