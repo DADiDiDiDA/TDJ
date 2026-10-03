@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1790122655065,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -669,
-                "y": 34,
-                "zoom": 0.87
+                "x": -123,
+                "y": -313,
+                "zoom": 0.66
             },
             "filename": "返回主界面",
-            "version": "v1.10.1"
+            "version": "v2.0.4"
         }
     },
     "主界面特征1": {
@@ -314,13 +310,13 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 879,
-                "y": 1110
+                "x": 855,
+                "y": 1131
             }
         }
     },
     "点击Esc返回-第一次": {
-        "max_hit": 10,
+        "max_hit": 35,
         "action": {
             "type": "ClickKey",
             "param": {
