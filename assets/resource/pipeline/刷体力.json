@@ -86,6 +86,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "刷取关卡方式选择-灵脉光渊"
         ],
@@ -114,6 +115,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "刷取关卡方式选择-灵脉光渊"
         ],
@@ -142,6 +144,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "刷取关卡方式选择-灵脉光渊"
         ],
@@ -170,6 +173,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]创命之间_第二次",
             "开始创命之间类型选择"
@@ -199,6 +203,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 8882,
@@ -273,6 +278,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 8606,
@@ -298,6 +304,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 8627,
@@ -323,6 +330,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "刷取关卡方式选择-灵脉光渊"
         ],
@@ -406,6 +414,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "刷取关卡方式选择-灵脉光渊"
         ],
@@ -434,6 +443,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "刷取关卡方式选择-灵脉光渊"
         ],
@@ -463,6 +473,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 8633,
@@ -493,6 +504,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 8580,
@@ -518,6 +530,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "刷取关卡方式选择-灵脉光渊"
         ],
@@ -547,6 +560,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]灵脉光渊_第二次",
             "开始灵脉光渊类型选择"
@@ -577,6 +591,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "刷取关卡方式选择-灵脉光渊"
         ],
@@ -626,6 +641,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "进入试炼挑战界面-图片识别",
             "[JumpBack]进入异闻界面_第二次",
@@ -657,6 +673,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 7728,
@@ -684,6 +701,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择打什么关卡"
         ],
@@ -713,6 +731,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择打什么关卡"
         ],
@@ -743,6 +762,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "判断是否在关卡内",
             "[JumpBack]选择可作战的关卡-灵脉光渊_第二次"
@@ -774,6 +794,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 11381,
@@ -803,7 +824,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": [
             "体力不足任务结束",
             "开始选择扫荡次数",
@@ -838,7 +859,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 11045,
@@ -905,6 +926,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "刷取关卡方式选择-灵脉光渊"
         ],
@@ -933,6 +955,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "刷取关卡方式选择-灵脉光渊"
         ],
@@ -961,6 +984,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 8624,
@@ -1008,6 +1032,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "旧世奖励领取了吗",
             "[JumpBack]开始进入旧世界面_第二次"
@@ -1020,7 +1045,7 @@
         }
     },
     "旧世奖励领取了吗": {
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": [
             "旧世奖励已领取",
             "[JumpBack]领取旧世每日奖励",
@@ -1051,6 +1076,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 7180,
@@ -1101,6 +1127,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "返回主界面开始"
         ],
@@ -1129,6 +1156,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 7533,
@@ -1155,6 +1183,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 8497,
