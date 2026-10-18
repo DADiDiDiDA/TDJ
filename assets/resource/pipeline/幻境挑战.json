@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1789777395182,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\幻境挑战.json",
             "savedViewport": {
-                "x": -4855,
-                "y": -36,
-                "zoom": 0.76
+                "x": -3948,
+                "y": 70,
+                "zoom": 0.7
             },
             "filename": "幻境挑战",
-            "version": "v1.10.1"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_返回主界面开始_幻境挑战": {
@@ -243,8 +239,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 6266,
-                "y": 514
+                "x": 6347,
+                "y": 323
             }
         }
     },
@@ -254,7 +250,8 @@
             "[JumpBack]选择第一位对手-幻境挑战",
             "[JumpBack]竞技场特殊情况处理",
             "[JumpBack]幻境位阶提升",
-            "[JumpBack]进入幻境界面开始_第二次"
+            "[JumpBack]进入幻境界面开始_第二次",
+            "[JumpBack]进入斗场菜单-幻境挑战_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -436,8 +433,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6396,
-                "y": 125
+                "x": 6320,
+                "y": -95
             }
         }
     },
@@ -462,8 +459,8 @@
         "post_delay": 2500,
         "$__mpe_code": {
             "position": {
-                "x": 6709,
-                "y": 384
+                "x": 6833,
+                "y": 555
             }
         }
     },

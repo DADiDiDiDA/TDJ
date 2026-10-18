@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -9627,
-                "y": 935,
-                "zoom": 0.62
+                "x": -14353,
+                "y": 1594,
+                "zoom": 0.85
             },
             "filename": "刷蚀之隙",
-            "version": "v1.9.0"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_返回主界面开始_刷蚀之隙": {
@@ -93,8 +93,8 @@
         "post_delay": 2500,
         "$__mpe_code": {
             "position": {
-                "x": 18087,
-                "y": -1334
+                "x": 18046,
+                "y": -1203
             }
         }
     },
@@ -179,9 +179,9 @@
                 ]
             }
         },
-        "post_delay": 2000,
         "repeat": 11,
         "repeat_delay": 500,
+        "post_delay": 2000,
         "next": [
             "选择刷第几章-刷蚀之隙"
         ],
@@ -317,7 +317,8 @@
     "选择刷取什么难度-刷蚀之隙": {
         "post_delay": 2000,
         "next": [
-            "选择普通难度-刷蚀之隙"
+            "选择普通难度-刷蚀之隙",
+            "[JumpBack]刷取第一章-刷蚀之隙_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -362,8 +363,7 @@
         "post_delay": 2000,
         "next": [
             "开始扫荡-刷蚀之隙",
-            "[JumpBack]寻找已通关关卡-刷蚀之隙",
-            "[JumpBack]刷取第一章-刷蚀之隙_第二次"
+            "[JumpBack]寻找已通关关卡-刷蚀之隙"
         ],
         "$__mpe_code": {
             "position": {
@@ -427,8 +427,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 18027,
-                "y": -953
+                "x": 17543,
+                "y": -1785
             }
         }
     }
