@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1790122724767,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\TDJ\\assets\\resource\\pipeline\\通关文牒奖励.json",
             "savedViewport": {
-                "x": -2155,
-                "y": -122,
-                "zoom": 0.5
+                "x": -2152,
+                "y": -207,
+                "zoom": 0.52
             },
             "filename": "通关文牒奖励",
-            "version": "v1.10.1"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_返回主界面开始_通关文牒奖励": {
@@ -55,12 +51,13 @@
         },
         "post_delay": 2000,
         "next": [
-            "选择一键领取"
+            "选择一键领取",
+            "[JumpBack]是否有待领取任务-文牒_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5754,
-                "y": 93
+                "x": 5753,
+                "y": 18
             }
         }
     },
@@ -158,7 +155,8 @@
     },
     "通关文牒奖励开始": {
         "next": [
-            "查看文牒位置"
+            "查看文牒位置",
+            "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -190,6 +188,43 @@
             "position": {
                 "x": 5982,
                 "y": 715
+            }
+        }
+    },
+    "是否有待领取任务-文牒_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1164,
+                    161,
+                    95,
+                    55
+                ],
+                "template": [
+                    "有可领取奖励图标.png"
+                ],
+                "threshold": [
+                    0.5
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -30,
+                    14,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6171,
+                "y": -208
             }
         }
     }
