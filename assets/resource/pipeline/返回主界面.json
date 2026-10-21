@@ -71,7 +71,7 @@
         "post_delay": 2000,
         "next": [
             "开始关卡内退出",
-            "[JumpBack]位于关卡内-退出开始_第二次"
+            "[JumpBack]位于关卡内-退出开始-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -80,7 +80,7 @@
             }
         }
     },
-    "位于关卡内-退出开始_第二次": {
+    "位于关卡内-退出开始-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -251,7 +251,7 @@
         "post_delay": 2000,
         "next": [
             "确认关卡内退出",
-            "[JumpBack]开始关卡内退出_第二次"
+            "[JumpBack]开始关卡内退出-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -260,7 +260,7 @@
             }
         }
     },
-    "开始关卡内退出_第二次": {
+    "开始关卡内退出-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {

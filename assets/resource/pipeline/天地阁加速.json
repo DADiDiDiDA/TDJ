@@ -109,7 +109,7 @@
         "next": [
             "选择动态界面",
             "[JumpBack]是不是工会活动弹出",
-            "[JumpBack]进入天地阁_第二次",
+            "[JumpBack]进入天地阁-第二次",
             "返回主界面开始"
         ],
         "$__mpe_code": {
@@ -140,7 +140,7 @@
         "post_delay": 2000,
         "next": [
             "一键加速盟友",
-            "[JumpBack]选择动态界面_第二次"
+            "[JumpBack]选择动态界面-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -149,7 +149,7 @@
             }
         }
     },
-    "进入天地阁_第二次": {
+    "进入天地阁-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -176,7 +176,7 @@
             }
         }
     },
-    "选择动态界面_第二次": {
+    "选择动态界面-第二次": {
         "recognition": {
             "type": "OCR",
             "param": {

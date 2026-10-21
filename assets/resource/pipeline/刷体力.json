@@ -175,7 +175,7 @@
         },
         "post_delay": 2000,
         "next": [
-            "[JumpBack]创命之间_第二次",
+            "[JumpBack]创命之间-第二次",
             "开始创命之间类型选择"
         ],
         "$__mpe_code": {
@@ -185,7 +185,7 @@
             }
         }
     },
-    "创命之间_第二次": {
+    "创命之间-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -562,7 +562,7 @@
         },
         "post_delay": 2000,
         "next": [
-            "[JumpBack]灵脉光渊_第二次",
+            "[JumpBack]灵脉光渊-第二次",
             "开始灵脉光渊类型选择"
         ],
         "$__mpe_code": {
@@ -645,7 +645,7 @@
         "next": [
             "进入试炼挑战界面-图片识别",
             "体力不足任务结束",
-            "[JumpBack]进入异闻界面_第二次",
+            "[JumpBack]进入异闻界面-第二次",
             "进入试炼挑战界面-ocr"
         ],
         "$__mpe_code": {
@@ -655,7 +655,7 @@
             }
         }
     },
-    "进入异闻界面_第二次": {
+    "进入异闻界面-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -766,7 +766,7 @@
         "post_delay": 2000,
         "next": [
             "判断是否在关卡内",
-            "[JumpBack]选择可作战的关卡-灵脉光渊_第二次"
+            "[JumpBack]选择可作战的关卡-灵脉光渊-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -775,7 +775,7 @@
             }
         }
     },
-    "选择可作战的关卡-灵脉光渊_第二次": {
+    "选择可作战的关卡-灵脉光渊-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -829,7 +829,7 @@
         "next": [
             "体力不足任务结束",
             "开始选择扫荡次数",
-            "[JumpBack]选择可扫荡的关卡-灵脉光渊_副本1"
+            "[JumpBack]选择可扫荡的关卡-灵脉光渊-副本1"
         ],
         "$__mpe_code": {
             "position": {
@@ -838,7 +838,7 @@
             }
         }
     },
-    "选择可扫荡的关卡-灵脉光渊_副本1": {
+    "选择可扫荡的关卡-灵脉光渊-副本1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1036,7 +1036,7 @@
         "post_delay": 2000,
         "next": [
             "旧世奖励领取了吗",
-            "[JumpBack]开始进入旧世界面_第二次"
+            "[JumpBack]开始进入旧世界面-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -1050,7 +1050,7 @@
         "next": [
             "旧世奖励已领取",
             "[JumpBack]领取旧世每日奖励",
-            "[JumpBack]开始进入旧世界面_第三次"
+            "[JumpBack]开始进入旧世界面-第三次"
         ],
         "$__mpe_code": {
             "position": {
@@ -1059,7 +1059,7 @@
             }
         }
     },
-    "开始进入旧世界面_第二次": {
+    "开始进入旧世界面-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1139,7 +1139,7 @@
             }
         }
     },
-    "开始进入旧世界面_第三次": {
+    "开始进入旧世界面-第三次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1165,7 +1165,7 @@
             }
         }
     },
-    "灵脉光渊_第二次": {
+    "灵脉光渊-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {

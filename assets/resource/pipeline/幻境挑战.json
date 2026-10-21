@@ -113,7 +113,7 @@
             "[JumpBack]开始跳过战斗-幻境挑战",
             "确认战斗结果-幻境挑战",
             "[JumpBack]位阶提升点击继续",
-            "[JumpBack]确认出战-幻境挑战_第二次"
+            "[JumpBack]确认出战-幻境挑战-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -163,7 +163,7 @@
         "timeout": 90000,
         "next": [
             "确认出战-幻境挑战",
-            "[JumpBack]开始自动战斗-幻境挑战_第二次"
+            "[JumpBack]开始自动战斗-幻境挑战-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -172,7 +172,7 @@
             }
         }
     },
-    "开始自动战斗-幻境挑战_第二次": {
+    "开始自动战斗-幻境挑战-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -250,8 +250,8 @@
             "[JumpBack]选择第一位对手-幻境挑战",
             "[JumpBack]竞技场特殊情况处理",
             "[JumpBack]幻境位阶提升",
-            "[JumpBack]进入幻境界面开始_第二次",
-            "[JumpBack]进入斗场菜单-幻境挑战_第二次"
+            "[JumpBack]进入幻境界面开始-第二次",
+            "[JumpBack]进入斗场菜单-幻境挑战-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -314,7 +314,7 @@
             }
         }
     },
-    "确认出战-幻境挑战_第二次": {
+    "确认出战-幻境挑战-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -429,7 +429,7 @@
         "post_delay": 2500,
         "next": [
             "进入幻境界面开始",
-            "[JumpBack]进入斗场菜单-幻境挑战_第二次"
+            "[JumpBack]进入斗场菜单-幻境挑战-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -438,7 +438,7 @@
             }
         }
     },
-    "进入斗场菜单-幻境挑战_第二次": {
+    "进入斗场菜单-幻境挑战-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -494,7 +494,7 @@
         "post_delay": 2000,
         "next": [
             "开始自动战斗-幻境挑战",
-            "[JumpBack]选择第一位对手-幻境挑战_第二次"
+            "[JumpBack]选择第一位对手-幻境挑战-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -503,7 +503,7 @@
             }
         }
     },
-    "选择第一位对手-幻境挑战_第二次": {
+    "选择第一位对手-幻境挑战-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -567,7 +567,7 @@
             }
         }
     },
-    "进入幻境界面开始_第二次": {
+    "进入幻境界面开始-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {

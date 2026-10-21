@@ -117,20 +117,20 @@
         "刷灵脉光渊-选择属性": {
             "type": "select",
             "label": "灵脉光渊 - 选择属性",
-            "default": "炎之灵脉",
+            "default_case": "炎之灵脉",
             "cases": [
-                { "name": "炎之灵脉", "label": "炎之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["炎之灵脉"] } } },
-                { "name": "冰之灵脉", "label": "冰之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["冰之灵脉"] } } },
-                { "name": "雷之灵脉", "label": "雷之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["雷之灵脉"] } } },
-                { "name": "光之灵脉", "label": "光之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["光之灵脉"] } } },
-                { "name": "暗之灵脉", "label": "暗之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["暗之灵脉"] } } },
-                { "name": "幽之灵脉", "label": "幽之灵脉", "pipeline_override": { "刷灵脉光渊-选择属性": { "next": ["幽之灵脉"] } } }
+                { "name": "炎之灵脉", "label": "炎之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["炎之灵脉"] } } },
+                { "name": "冰之灵脉", "label": "冰之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["冰之灵脉"] } } },
+                { "name": "雷之灵脉", "label": "雷之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["雷之灵脉"] } } },
+                { "name": "光之灵脉", "label": "光之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["光之灵脉"] } } },
+                { "name": "暗之灵脉", "label": "暗之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["暗之灵脉"] } } },
+                { "name": "幽之灵脉", "label": "幽之灵脉", "pipeline_override": { "开始灵脉光渊类型选择": { "next": ["幽之灵脉"] } } }
             ]
         },
         "选择打什么关卡": {
             "type": "select",
             "label": "选择关卡",
-            "default": "创命之间",
+            "default_case": "创命之间",
             "cases": [
                 {
                     "name": "创命之间",
@@ -202,7 +202,7 @@
         "开始创命之间类型选择": {
             "type": "select",
             "label": "创命之间 - 选择属性",
-            "default": "火属相",
+            "default_case": "火属相",
             "cases": [
                 { "name": "火属相", "label": "火属相", "pipeline_override": { "开始创命之间类型选择": { "next": ["火属相"] } } },
                 { "name": "冰属相", "label": "冰属相", "pipeline_override": { "开始创命之间类型选择": { "next": ["冰属相"] } } },
@@ -213,7 +213,7 @@
         "刷取关卡方式选择-灵脉光渊": {
             "type": "select",
             "label": "选择刷取方式",
-            "default": "扫荡",
+            "default_case": "扫荡",
             "cases": [
                 { "name": "扫荡", "label": "扫荡", "pipeline_override": { "刷取关卡方式选择-灵脉光渊": { "next": ["选择扫荡方式-灵脉光渊"] } } },
                 { "name": "正常对战", "label": "正常对战", "pipeline_override": { "刷取关卡方式选择-灵脉光渊": { "next": ["选择正常对战方式-灵脉光渊"] } } }

@@ -52,7 +52,7 @@
         "post_delay": 2000,
         "next": [
             "选择所有好友类别-好友",
-            "[JumpBack]进入好友界面_第二次"
+            "[JumpBack]进入好友界面-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -81,7 +81,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "选择友情点全部领取-好友"
+            "选择友情点全部领取-好友",
+            "[JumpBack]返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -139,7 +140,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "选择友情点全部赠送-好友"
+            "选择友情点全部赠送-好友",
+            "[JumpBack]返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -148,7 +150,7 @@
             }
         }
     },
-    "进入好友界面_第二次": {
+    "进入好友界面-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
