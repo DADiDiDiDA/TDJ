@@ -13,8 +13,8 @@
                 "class_regex": ".*",
                 "window_regex": "天地劫",
                 "screencap": "PrintWindow",
-                "mouse": "PostMessageWithCursorPos",
-                "keyboard": "PostMessageWithCursorPos"
+                "mouse": "Seize",
+                "keyboard": "Seize"
             }
         },
         {
