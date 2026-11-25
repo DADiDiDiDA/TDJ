@@ -340,6 +340,7 @@
         }
     },
     "进入山河志界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -402,6 +403,7 @@
         }
     },
     "选择任务地区-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -457,6 +459,7 @@
         }
     },
     "满足派遣条件开始执行-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

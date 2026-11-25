@@ -150,6 +150,7 @@
         }
     },
     "进入天地阁-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -177,6 +178,7 @@
         }
     },
     "选择动态界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

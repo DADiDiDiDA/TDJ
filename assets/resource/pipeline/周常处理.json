@@ -95,6 +95,7 @@
         }
     },
     "寻找是否有待刷周常-第二次-周常处理": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

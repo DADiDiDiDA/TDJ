@@ -173,6 +173,7 @@
         }
     },
     "开始自动战斗-幻境挑战-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -315,6 +316,7 @@
         }
     },
     "确认出战-幻境挑战-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -439,6 +441,7 @@
         }
     },
     "进入斗场菜单-幻境挑战-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -504,6 +507,7 @@
         }
     },
     "选择第一位对手-幻境挑战-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -568,6 +572,7 @@
         }
     },
     "进入幻境界面开始-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

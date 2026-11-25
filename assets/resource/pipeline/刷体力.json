@@ -186,6 +186,7 @@
         }
     },
     "创命之间-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -656,6 +657,7 @@
         }
     },
     "进入异闻界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -776,6 +778,7 @@
         }
     },
     "选择可作战的关卡-灵脉光渊-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1060,6 +1063,7 @@
         }
     },
     "开始进入旧世界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1166,6 +1170,7 @@
         }
     },
     "灵脉光渊-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

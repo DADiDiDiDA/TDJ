@@ -95,6 +95,7 @@
         }
     },
     "查看文牒位置-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -192,6 +193,7 @@
         }
     },
     "是否有待领取任务-文牒-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

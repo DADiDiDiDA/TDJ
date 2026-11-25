@@ -313,6 +313,7 @@
         }
     },
     "进入召唤界面-每日免费召唤-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -339,6 +340,7 @@
         }
     },
     "选择时轮召唤界面-每日免费召唤-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

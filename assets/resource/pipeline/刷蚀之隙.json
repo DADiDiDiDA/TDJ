@@ -289,6 +289,7 @@
         }
     },
     "进入蚀之隙界面-刷蚀之隙-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -373,6 +374,7 @@
         }
     },
     "进入蚀之隙界面-刷蚀之隙OCR-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -407,6 +409,7 @@
         }
     },
     "刷取第一章-刷蚀之隙-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

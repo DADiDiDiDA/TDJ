@@ -200,6 +200,7 @@
         }
     },
     "开始作战-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -226,6 +227,7 @@
         }
     },
     "开启自动战斗-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
